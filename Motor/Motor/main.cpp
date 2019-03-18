@@ -7,17 +7,17 @@ void setstep(int w1, int w2, int w3, int w4) {
 	digitalWrite(3, w4);
 }
 
-void steps(int delay, int steps) {
+void steps(int time, int steps) {
 	for (int i = 0; i < steps; i++)
 	{
 		setstep(1, 0, 0, 0);
-		delay(delay);
+		delay(time);
 		setstep(0, 1, 0, 0);
-		delay(delay);
+		delay(time);
 		setstep(0, 0, 1, 0);
-		delay(delay);
+		delay(time);
 		setstep(0, 0, 0, 1);
-		delay(delay);
+		delay(time);
 	}
 }
 
