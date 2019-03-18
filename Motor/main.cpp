@@ -20,7 +20,7 @@ void steps(int time, int steps) {
 		delay(time);
 	}
 }
-
+test
 int main(void)
 {
 	wiringPiSetup();
