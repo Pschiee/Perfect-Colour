@@ -1,5 +1,12 @@
 #include <wiringPi.h>
 
+void setstep(int w1, int w2, int w3, int w4) {
+	digitalWrite(0, w1);
+	digitalWrite(1, w2);
+	digitalWrite(2, w3);
+	digitalWrite(3, w4);
+}
+
 void steps(int delay, int steps) {
 	for (int i = 0; i < steps; i++)
 	{
@@ -12,14 +19,6 @@ void steps(int delay, int steps) {
 		setstep(0, 0, 0, 1);
 		delay(delay);
 	}
-}
-
-void setstep(int w1, int w2, int w3, int w4) {
-	digitalWrite(0, w1);
-	digitalWrite(1, w2);
-	digitalWrite(2, w3);
-	digitalWrite(3, w4);
-	
 }
 
 int main(void)
