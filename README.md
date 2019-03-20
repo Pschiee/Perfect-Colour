@@ -3,6 +3,10 @@
 	<img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="500" height="500" ></a></p>
 
+<p align="left">
+	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Socials.png" 
+	 title="Perfect Colour" width="250" height="110" ></a></p>
+	 
 # Perfect Colour 
 
 Welcome to the Github for Perfect Colour - The paint system to automatically dispense the colour of paint that you want.
