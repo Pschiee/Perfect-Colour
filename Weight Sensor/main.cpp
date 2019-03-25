@@ -27,8 +27,6 @@ int main{
 
 	if(DOUT == 0) {
 		long data = readData();
+		printf("Data: %ld")
 	}
-
-
-
 }
