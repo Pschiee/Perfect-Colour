@@ -36,14 +36,17 @@ int main(void) {
 	digitalWrite(5,HIGH);
 
 	while (1) {
-	int time = 2;
-	step1();
-	delay(time);
-	step2();
-	delay(time);
-	step3();
-	delay(time);
-	step4();
-	delay(time);
+	for (int i=0;i<10;i++) {
+		int time = 2;
+		step1();
+		delay(time);
+		step2();
+		delay(time);
+		step3();
+		delay(time);
+		step4();
+		delay(time);
+		}
+	delay(2000);
 	}
 }
