@@ -1,42 +1,21 @@
+#include "HX711.h"
+#include <iostream>
 #include <wiringPi.h>
-#include<stdio.h>
-#include<iostream>
-
-#define PD_SCK 5
-#define DOUT 6
 
 using namespace std;
 
-long readData() {
-	long count = 0x0;
-	for (int i = 0; i < 24; i++) {
-		digitalWrite(PD_SCK, HIGH);
-		count = count << 1;
-		digitalWrite(PD_SCK, LOW);
-		int read = digitalRead(DOUT);
-		if (read > 0) {
-	//		cout << "Dout is: " << read << "\n" << flush;
-			count++;
-		}
-	}
-	digitalWrite(PD_SCK, HIGH);
-	delay(0.1);
-	digitalWrite(PD_SCK, LOW);
-	return count;
-}
+HX711 test;
 
-int main(void)
-{
-	cout << "Code running \n"<< flush;
+int main(void) {
 	wiringPiSetup();
-	pinMode(PD_SCK, OUTPUT);
-	pinMode(DOUT, INPUT);
-	digitalWrite(PD_SCK, LOW);
-while(1){
-	if(DOUT == 0) {
+	test.setup(21, 22);
+	test.set_scale(562.89);
+	test.set_offset(8423263);
+	while(1) {
+		int value =test.get_units();
 
-		long data = readData();
-		cout<< "Data: "<< data << "\n" << flush ;
+		cout << "Data before: " << value << " \n" << flush;
+
 	}
-}
+
 }
