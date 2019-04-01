@@ -9,7 +9,7 @@
 #include "WProgram.h"
 #endif
 #else
-#include <wiringPi>
+//#include <wiringPi>
 #endif
 
 class HX711

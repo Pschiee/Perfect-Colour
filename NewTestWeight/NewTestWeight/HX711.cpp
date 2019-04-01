@@ -1,4 +1,5 @@
 #include "HX711.h"
+#include <stdint.h>
 
 void bitWrite(uint8_t &x, unsigned int n, bool b) {
 	if (n <= 7 && n >= 0) {
@@ -11,7 +12,7 @@ void bitWrite(uint8_t &x, unsigned int n, bool b) {
 	}
 }
 
-void HX711::setup(byte dout, byte pd_sck, byte gain) {
+void HX711::setup(int dout, int pd_sck, int gain) {
 	PD_SCK = pd_sck;
 	DOUT = dout;
 
@@ -29,7 +30,7 @@ bool HX711::is_ready() {
 	return digitalRead(DOUT) == LOW;
 }
 
-void HX711::set_gain(byte gain) {
+void HX711::set_gain(int gain) {
 	switch (gain) {
 	case 128:		// channel A, gain factor 128
 		GAIN = 1;
@@ -46,7 +47,7 @@ void HX711::set_gain(byte gain) {
 	read();
 }
 
-byte HX711::get_gain() {
+int HX711::get_gain() {
 	return GAIN;
 }
 
@@ -54,10 +55,10 @@ long HX711::read() {
 	// wait for the chip to become ready
 	while (!is_ready());
 
-	byte data[3];
+	uint8_t data[3];
 
 	// pulse the clock pin 24 times to read the data
-	for (byte j = 3; j--;) {
+	for (int j = 3; j--;) {
 		for (char i = 8; i--;) {
 			digitalWrite(PD_SCK, HIGH);
 			bitWrite(data[j], i, digitalRead(DOUT));
@@ -76,23 +77,23 @@ long HX711::read() {
 	return (((uint32_t)data[2] << 16) | ((uint32_t)data[1] << 8) | (uint32_t)data[0]);
 }
 
-long HX711::read_average(byte times) {
+long HX711::read_average(int times) {
 	long sum = 0;
-	for (byte i = 0; i < times; i++) {
+	for (int i = 0; i < times; i++) {
 		sum += read();
 	}
 	return sum / times;
 }
 
-double HX711::get_value(byte times) {
+double HX711::get_value(int times) {
 	return read_average(times) - OFFSET;
 }
 
-float HX711::get_units(byte times) {
+float HX711::get_units(int times) {
 	return get_value(times) / SCALE;
 }
 
-void HX711::tare(byte times) {
+void HX711::tare(int times) {
 	double sum = read_average(times);
 	set_offset(sum);
 }
