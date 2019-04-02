@@ -23,17 +23,17 @@ Through the use of the GUI, you can select the colour using two different method
 * FAQs
 * Credits
 
-# How to get started
+## How to get started
 Once you own a Perfect Colour Machine, follow 3 simple steps:
 1. Obtain the 5 primary paints and load them to the machine
 2. Open our app
 3. Choose your colour and click "mix"
 
-# Using the application
+## Using the application
 
-# FAQs
+## FAQs
 
-# Credits
+## Credits
 * Callum Peter Mason:Software Engineer
 * Sylviya Ivanova: PCB Engineer
 * Leire Froufe Vigara: Mechanical Engineer and Marketing
