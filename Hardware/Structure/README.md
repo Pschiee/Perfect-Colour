@@ -1,7 +1,10 @@
 # Mechanical Design
 
 Parts of the mechanical design have been designed and assembled using Solidworks. 
-
+<p align="center">
+ <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
+	 title="Perfect Colour" width="50" height="50" ></a></p>
+	 
 ## Contents
  1. Design Description
  2. Parts
@@ -23,6 +26,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  The parts were manufactured individually using different materials. However, aluminium was used for the most important parts to make it more durable. Other materials might not be able to withstand the torques produced by the spin of the caroussel. Therefore, the caroussel was manufactured in aluminium and aluminium rods were used for all connections.
  
  ## 4. Preview
-<p align="center">
- <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
-	 title="Perfect Colour" width="500" height="500" ></a></p>
+
+
+      
+      
