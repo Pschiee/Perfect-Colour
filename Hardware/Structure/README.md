@@ -1,7 +1,7 @@
 # Mechanical Design
 
 Parts of the mechanical design have been designed and assembled using Solidworks. 
-<p align="center">
+<p align="left">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="50" height="50" ></a></p>
 	 
