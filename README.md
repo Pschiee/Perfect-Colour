@@ -28,4 +28,8 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 2. Open our app
 3. Choose your colour and click "mix"
 
+# Using the application
+
+# FAQs
+
 Ensusre the latest version of the software is being used.
