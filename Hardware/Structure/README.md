@@ -16,7 +16,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  * Syringes: Five 30ml syringes holding the five colours
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Syringe.JPG" 
-	 title="Syringe" width="130" height="1700" ></a></p>
+	 title="Syringe" width="130" height="170" ></a></p>
 * Carroussel: to hold the paints
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Carousel%20assembly.JPG" 
@@ -37,7 +37,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  ## 4. Preview
  <p align="center">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Final%20Structure%20nice%20angle.JPG" 
-	 title="Final Structure" width="250" height="290" ></a></p>
+	 title="Final Structure" width="350" height="390" ></a></p>
 
  <p align="right">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
