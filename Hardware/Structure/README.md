@@ -17,7 +17,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Syringe.JPG" 
 	 title="Syringe" width="130" height="170" ></a></p>
-- **Carroussel** 
+ **- Carroussel** 
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Carousel%20assembly.JPG" 
 	 title="Caroussel" width="130" height="170" ></a></p>
