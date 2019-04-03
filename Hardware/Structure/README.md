@@ -49,3 +49,4 @@ Parts of the mechanical design have been designed and assembled using Solidworks
       
 ## 5. Further Information
 For further information:
+https://github.com/Pschiee/Perfect-Colour/wiki/Hardware
