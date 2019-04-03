@@ -40,4 +40,4 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 
  <p align="right">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
-	 title="Perfect Colour" width="50" height="50" ></a></p>
+	 title="Perfect Colour" width="70" height="70" ></a></p>
