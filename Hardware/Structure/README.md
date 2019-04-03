@@ -21,7 +21,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Carousel%20assembly.JPG" 
 	 title="Caroussel" width="130" height="170" ></a></p>
- * Main structure: Table shaped. Holds the caroussel. The linear actuator that pushes the paint out, the motor that spins the caroussel.
+ * Main structure: Table shaped. Holds the caroussel, the linear actuator that pushes the paint out, the motor that spins the caroussel.
  <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Main%20Structure%20Table.JPG" 
 	 title="Main Structure" width="130" height="170" ></a></p>
