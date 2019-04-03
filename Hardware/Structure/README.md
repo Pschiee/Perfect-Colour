@@ -4,9 +4,13 @@ Parts of the mechanical design have been designed and assembled using Solidworks
 	 
 ## Contents
  **1. Design Description
- 2. Parts
+ 
+**2. Parts
+
 **3. Manufacturing
- 4. Preview
+ 
+ **4. Preview
+ 
  **5. Further Information
  
  ##  1. Design Description
