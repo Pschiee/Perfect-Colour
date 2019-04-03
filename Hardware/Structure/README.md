@@ -17,11 +17,17 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  ## 2. Parts
  The main parts of the structure are summarised below:
  * Carroussel: to hold the paints
+  <p align="left">
+ <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Carousel%20assembly.JPG" 
+	 title="Caroussel" width="150" height="190" ></a></p>
  * Main structure: Table shaped. Holds the caroussel. The linear actuator that pushes the paint out, the motor that spins the caroussel.
  <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Main%20Structure%20Table.JPG" 
-	 title="Main Structure" width="100" height="130" ></a></p>
+	 title="Main Structure" width="150" height="190" ></a></p>
  * Syringes: Five 30ml syringes holding the five colours
+  <p align="left">
+ <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Syringe.JPG" 
+	 title="Syringe" width="150" height="190" ></a></p>
  * Attachment parts: In order to atach the caroussel to the spinning motor, the motor to the main structure, the actuator to the main structure.
  
  ## 3. Manufacturing
