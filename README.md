@@ -37,7 +37,6 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 * Callum Peter Mason: Software Engineer
 * Sylviya Ivanova: PCB Engineer
 * Leire Froufe Vigara: Mechanical Engineer and Marketing
-Ensusre the latest version of the software is being used.
 
  <p align="right">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
