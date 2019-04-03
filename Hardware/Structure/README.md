@@ -31,7 +31,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  * Attachment parts: In order to atach the caroussel to the spinning motor, the motor to the main structure, the actuator to the main structure.
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/3%20Attachments%20together.JPG" 
-	 title="3 attachments" width="150" height="190" ></a></p>
+	 title="3 attachments" width="190" height="190" ></a></p>
  
  ## 3. Manufacturing
  
@@ -40,7 +40,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  ## 4. Preview
  <p align="center">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Final%20Structure%20nice%20angle.JPG" 
-	 title="Final Structure" width="200" height="240" ></a></p>
+	 title="Final Structure" width="250" height="290" ></a></p>
 
       
       
