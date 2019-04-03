@@ -47,10 +47,12 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Final%20Structure%20nice%20angle.JPG" 
 	 title="Final Structure" width="350" height="390" ></a></p>
 
- <p align="right">
- <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
-	 title="Perfect Colour" width="50" height="50" ></a></p>
       
 ## 5. Further Information
 For further information:
 https://github.com/Pschiee/Perfect-Colour/wiki/Hardware
+
+
+ <p align="right">
+ <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
+	 title="Perfect Colour" width="50" height="50" ></a></p>
