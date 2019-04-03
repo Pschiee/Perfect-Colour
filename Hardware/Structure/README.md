@@ -21,22 +21,22 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  - **Syringes** 
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Syringe.JPG" 
-	 title="Syringe" width="130" height="170" ></a></p>
+	 title="Syringe" width="150" height="190" ></a></p>
 
 - **Carroussel** 
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Carousel%20assembly.JPG" 
-	 title="Caroussel" width="130" height="170" ></a></p>
+	 title="Caroussel" width="150" height="190" ></a></p>
  
  - **Main structure**
  <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Main%20Structure%20Table.JPG" 
-	 title="Main Structure" width="130" height="170" ></a></p>
+	 title="Main Structure" width="150" height="190" ></a></p>
 
 - **Attachment parts** 
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/3%20Attachments%20together.JPG" 
-	 title="3 attachments" width="170" height="170" ></a></p>
+	 title="3 attachments" width="190" height="190" ></a></p>
  
  ## 3. Manufacturing
  
