@@ -1,9 +1,6 @@
 # Mechanical Design
 
 Parts of the mechanical design have been designed and assembled using Solidworks. 
-<p align="left">
- <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
-	 title="Perfect Colour" width="50" height="50" ></a></p>
 	 
 ## Contents
  1. Design Description
@@ -19,19 +16,19 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  * Syringes: Five 30ml syringes holding the five colours
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Syringe.JPG" 
-	 title="Syringe" width="150" height="190" ></a></p>
+	 title="Syringe" width="130" height="1700" ></a></p>
 * Carroussel: to hold the paints
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Carousel%20assembly.JPG" 
-	 title="Caroussel" width="150" height="190" ></a></p>
+	 title="Caroussel" width="130" height="170" ></a></p>
  * Main structure: Table shaped. Holds the caroussel. The linear actuator that pushes the paint out, the motor that spins the caroussel.
  <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Main%20Structure%20Table.JPG" 
-	 title="Main Structure" width="150" height="190" ></a></p>
+	 title="Main Structure" width="130" height="170" ></a></p>
  * Attachment parts: In order to atach the caroussel to the spinning motor, the motor to the main structure, the actuator to the main structure.
   <p align="left">
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/3%20Attachments%20together.JPG" 
-	 title="3 attachments" width="190" height="190" ></a></p>
+	 title="3 attachments" width="170" height="170" ></a></p>
  
  ## 3. Manufacturing
  
@@ -42,5 +39,7 @@ Parts of the mechanical design have been designed and assembled using Solidworks
  <img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Hardware/Images/Final%20Structure%20nice%20angle.JPG" 
 	 title="Final Structure" width="250" height="290" ></a></p>
 
-      
+ <p align="right">
+ <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
+	 title="Perfect Colour" width="50" height="50" ></a></p>
       
