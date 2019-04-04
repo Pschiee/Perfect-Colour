@@ -46,7 +46,7 @@ Software Engineer
 	 title="Callum" width="250" height="210" ></a></p>
 	 
 **- Sylviya Ivanova:** 
-
+<p align="center">
 PCB Engineer
 
 <p align="center">
