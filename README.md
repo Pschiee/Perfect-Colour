@@ -18,12 +18,17 @@ Welcome to the Github for Perfect Colour - The paint system to automatically dis
 Through the use of the GUI, you can select the colour using two different methods: by using the colour wheel or by selecting the colour you wish on an image which can then be made for you. 
 
 ## Contents
+
 * How to get started
+
 * Using the application
+
 * FAQs
+
 * Credits
 
 ## How to get started
+
 Once you own a Perfect Colour Machine, follow 3 simple steps:
 1. Obtain the 5 primary paints and load them to the machine
 2. Open our app
@@ -31,15 +36,29 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 
 ## Using the application
 
+Very simple! Follow the following steps:
+1. Open the application
+2. Select a colour on the palette or by uploading a picture and choosing it from it.
+3. Specify the quantity of paint you want
+4. Click mix and voila!
+
 ## FAQs
 **- Can other types of paints be used?**
+
 The machine is designed to produce colours with acrylic. The accuracy might vary with the quality and types of paint used. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
 
 **- Can I choose the exact coloyr I want?**
+
 Indeed. You can either choose it within a palette or even take a picture and select the exact pixel (colour) you want in it.
 
 **- Can any colour be produced?**
+
 Yes! CMYK plus white, when mixed correctly, should be able to produce any colour. 
+
+## Further Information
+
+For further information please visit: 
+https://github.com/Pschiee/Perfect-Colour/wiki
 
 ## Credits
 
