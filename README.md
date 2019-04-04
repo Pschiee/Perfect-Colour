@@ -38,10 +38,10 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 <p align="right">
 
 **- Callum Peter Mason:**
-<p align="right">
+<p align="left">
 Software Engineer
 
-<p align="right">
+<p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Callum.jpg" 
 	 title="Callum" width="250" height="210" ></a></p>
 	 
@@ -57,7 +57,7 @@ PCB Engineer
 
 Mechanical Engineer and Marketing
 
-<p align="left">
+<p align="right">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Leire%20FV.jpg" 
 	 title="Leire" width="170" height="210" ></a></p>
 	 
