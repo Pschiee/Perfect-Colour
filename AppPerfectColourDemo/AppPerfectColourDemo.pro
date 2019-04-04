@@ -28,16 +28,25 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     selectcolour.cpp \
-    my_qlabel.cpp
+    my_qlabel.cpp \
+    paint.cpp \
+    Motor.cpp \
+    dispense.cpp \
+    chosen_colour.cpp
 
 HEADERS += \
         mainwindow.h \
     selectcolour.h \
-    my_qlabel.h
+    my_qlabel.h \
+    paint.h \
+    Motor.h \
+    dispense.h \
+    chosen_colour.h
 
 FORMS += \
         mainwindow.ui \
-    selectcolour.ui
+    selectcolour.ui \
+    paint.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -12,6 +12,7 @@
 #include <QLabel>
 #include <QResizeEvent>
 #include "my_qlabel.h"
+#include "motor.h"
 
 selectcolour::selectcolour(QWidget *parent) :
     QDialog(parent),
@@ -20,6 +21,7 @@ selectcolour::selectcolour(QWidget *parent) :
     ui->setupUi(this);
     //QWidget::showMaximized();
     this->setWindowState(Qt::WindowFullScreen);
+	
     //ui->label_browse->setScaledContents(true);
     connect(ui->label_browse, SIGNAL(Mouse_Pos()),this,SLOT(Mouse_current_pos()));
     connect(ui->label_browse, SIGNAL(Mouse_Pressed()),this,SLOT(Mouse_Pressed()));
