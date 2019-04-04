@@ -47,25 +47,23 @@ Software Engineer
 	 
 **- Sylviya Ivanova:** 
 
-<p align="center">
+<p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Silviya.jpg" 
 	 title="Silviya" width="190" height="210" ></a></p>
-<p align="center">
+<p align="leftr">
 PCB Engineer
 
 	 
 **- Leire Froufe Vigara:**
 
-<p align="right">
+<p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Leire%20FV.jpg" 
 	 title="Leire" width="170" height="210" ></a></p>
-	 <p align="right">
+<p align="left">
 Mechanical Engineer and Marketing
 	 
-{bl}
-{bl}
-{bl}
-	
+
+
  <p align="right">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="70" height="70" ></a></p>
