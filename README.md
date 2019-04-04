@@ -54,14 +54,16 @@ PCB Engineer
 	 title="Silviya" width="190" height="210" ></a></p>
 	 
 **- Leire Froufe Vigara:**
-
+<p align="right">
 Mechanical Engineer and Marketing
 
 <p align="right">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Leire%20FV.jpg" 
 	 title="Leire" width="170" height="210" ></a></p>
 	 
-	
+{empty} +
+{empty} +
+{empty} +
 	
  <p align="right">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
