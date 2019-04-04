@@ -36,8 +36,9 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 ## Credits
 
 <p align="right">
-**- Callum Peter Mason:**
 
+**- Callum Peter Mason:**
+<p align="right">
 Software Engineer
 
 <p align="right">
