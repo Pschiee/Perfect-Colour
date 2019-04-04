@@ -23,9 +23,9 @@
 <!-- links to your social media accounts -->
 <!-- update these accordingly -->
 
-[1]: http://www.twitter.com/carlsednaoui
-[2]: http://www.facebook.com/sednaoui
-[3]: https://plus.google.com/+CarlSednaoui
+[1]: https://twitter.com/PerfectColour1
+[2]: https://www.facebook.com/Perfect-Colour-2317584661807012/
+[3]: https://github.com/Pschiee/Perfect-Colour
 
 # Perfect Colour 
 
@@ -81,7 +81,7 @@ For further information please visit our wiki:
 https://github.com/Pschiee/Perfect-Colour/wiki
 
 Or visit our website:
-
+https://enquiriesperfectco.wixsite.com/perfectcolour
 
 ## Credits
 
