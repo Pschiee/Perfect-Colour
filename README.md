@@ -31,22 +31,24 @@ Through the use of the GUI, you can select the colour using two different method
 
 ## Contents
 
-* How to get started
+**1. How to get started**
 
-* Using the application
+**2. Using the application**
 
-* FAQs
+**3. FAQs**
 
-* Credits
+**4. Further Information**
 
-## How to get started
+**5. Credits**
+
+## 1. How to get started
 
 Once you own a Perfect Colour Machine, follow 3 simple steps:
 1. Obtain the 5 primary paints and load them to the machine
 2. Open our app
 3. Choose your colour and click "mix"
 
-## Using the application
+## 2. Using the application
 
 Very simple! Follow the following steps:
 1. Open the application
@@ -54,7 +56,7 @@ Very simple! Follow the following steps:
 3. Specify the quantity of paint you want
 4. Click mix and voila!
 
-## FAQs
+## 3. FAQs
 **- Can other types of paints be used?**
 
 The machine is designed to produce colours with acrylic. The accuracy might vary with the quality and types of paint used. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
@@ -67,7 +69,7 @@ Indeed. You can either choose it within a palette or even take a picture and sel
 
 Yes! CMYK plus white, when mixed correctly, should be able to produce any colour. 
 
-## Further Information
+## 4. Further Information
 
 For further information please visit our wiki: 
 https://github.com/Pschiee/Perfect-Colour/wiki
@@ -75,7 +77,7 @@ https://github.com/Pschiee/Perfect-Colour/wiki
 Or visit our website:
 https://enquiriesperfectco.wixsite.com/perfectcolour
 
-## Credits
+## 5. Credits
 
 <p align="right">
 
