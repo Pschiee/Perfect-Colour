@@ -2,6 +2,7 @@
 	<a href="https://enquiriesperfectco.wixsite.com/perfectcolour">
 	<img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="500" height="500" ></a></p>
+
 <!-- display the social media buttons in your README -->
 
 [![alt text][1.1]][1]
@@ -18,6 +19,9 @@
 
 <!-- links to your social media accounts -->
 <!-- update these accordingly -->
+
+[1]: https://twitter.com/PerfectColour1
+[2]: https://www.facebook.com/Perfect-Colour-2317584661807012/
 
 # Perfect Colour 
 
@@ -112,8 +116,4 @@ Mechanical Engineer and Marketing
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="70" height="70" ></a></p>
 	 
-	
-
-[1]: https://twitter.com/PerfectColour1
-[2]: https://www.facebook.com/Perfect-Colour-2317584661807012/
 
