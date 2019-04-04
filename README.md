@@ -6,7 +6,27 @@
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Socials.png" 
 	 title="Perfect Colour" width="250" height="110" ></a></p>
-	 
+<!-- display the social media buttons in your README -->
+
+[![alt text][1.1]][1]
+[![alt text][2.1]][2]
+[![alt text][3.1]][2]
+<!-- links to social media icons -->
+<!-- no need to change these -->
+
+<!-- icons with padding -->
+
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
+[3.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+
+<!-- links to your social media accounts -->
+<!-- update these accordingly -->
+
+[1]: http://www.twitter.com/carlsednaoui
+[2]: http://www.facebook.com/sednaoui
+[3]: https://plus.google.com/+CarlSednaoui
+
 # Perfect Colour 
 
 Welcome to the Github for Perfect Colour - The paint system to automatically dispense the colour of paint that you want.
@@ -38,7 +58,7 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 
 Very simple! Follow the following steps:
 1. Open the application
-2. Select a colour on the palette or by uploading a picture and choosing it from it.
+2. Select a colour on the wheel or by uploading a picture and choosing it from it.
 3. Specify the quantity of paint you want
 4. Click mix and voila!
 
@@ -57,8 +77,11 @@ Yes! CMYK plus white, when mixed correctly, should be able to produce any colour
 
 ## Further Information
 
-For further information please visit: 
+For further information please visit our wiki: 
 https://github.com/Pschiee/Perfect-Colour/wiki
+
+Or visit our website:
+
 
 ## Credits
 
