@@ -91,7 +91,7 @@ Software Engineer
 
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Silviya.jpg" 
-	 title="Silviya" width="190" height="210" ></a></p>
+	 title="Silviya" width="170" height="210" ></a></p>
 <p align="leftr">
 PCB Engineer
 
