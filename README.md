@@ -32,6 +32,14 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 ## Using the application
 
 ## FAQs
+**- Can other types of paints be used?**
+The machine is designed to produce colours with acrylic. The accuracy might vary with the quality and types of paint used. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
+
+**- Can I choose the exact coloyr I want?**
+Indeed. You can either choose it within a palette or even take a picture and select the exact pixel (colour) you want in it.
+
+**- Can any colour be produced?**
+Yes! CMYK plus white, when mixed correctly, should be able to produce any colour. 
 
 ## Credits
 
