@@ -10,7 +10,7 @@
 
 [![alt text][1.1]][1]
 [![alt text][2.1]][2]
-[![alt text][3.1]][2]
+[![alt text][6.1]][2]
 <!-- links to social media icons -->
 <!-- no need to change these -->
 
@@ -18,14 +18,14 @@
 
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
 [2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
-[3.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+[6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
 
 <!-- links to your social media accounts -->
 <!-- update these accordingly -->
 
 [1]: https://twitter.com/PerfectColour1
 [2]: https://www.facebook.com/Perfect-Colour-2317584661807012/
-[3]: https://github.com/Pschiee/Perfect-Colour
+[6]: https://github.com/Pschiee/Perfect-Colour
 
 # Perfect Colour 
 
