@@ -38,32 +38,33 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 <p align="right">
 
 **- Callum Peter Mason:**
-<p align="left">
-Software Engineer
 
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Callum.jpg" 
 	 title="Callum" width="250" height="210" ></a></p>
+<p align="left">
+Software Engineer	 
 	 
 **- Sylviya Ivanova:** 
-<p align="center">
-PCB Engineer
 
 <p align="center">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Silviya.jpg" 
 	 title="Silviya" width="190" height="210" ></a></p>
+<p align="center">
+PCB Engineer
+
 	 
 **- Leire Froufe Vigara:**
-<p align="right">
-Mechanical Engineer and Marketing
 
 <p align="right">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Leire%20FV.jpg" 
 	 title="Leire" width="170" height="210" ></a></p>
+	 <p align="right">
+Mechanical Engineer and Marketing
 	 
-{empty} +
-{empty} +
-{empty} +
+{bl}
+{bl}
+{bl}
 	
  <p align="right">
  <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
