@@ -115,9 +115,3 @@ Mechanical Engineer and Marketing
 [1]: https://twitter.com/PerfectColour1
 [2]: https://www.facebook.com/Perfect-Colour-2317584661807012/
 
-
-
- <p align="right">
- <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
-	 title="Perfect Colour" width="70" height="70" ></a></p>
-	 
