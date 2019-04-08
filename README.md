@@ -65,7 +65,7 @@ Very simple! Follow the following steps:
 
 The machine is designed to produce colours with acrylic. The accuracy might vary with the quality and types of paint used. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
 
-**- Can I choose the exact coloyr I want?**
+**- Can I choose the exact colour I want?**
 
 Indeed. You can either choose it within a palette or even take a picture and select the exact pixel (colour) you want in it.
 
