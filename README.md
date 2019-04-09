@@ -93,7 +93,7 @@ https://enquiriesperfectco.wixsite.com/perfectcolour
 <p align="left">
 Software Engineer	 
 	 
-**- Sylviya Ivanova:** 
+**- Silviya Ivanova:** 
 
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/Silviya.jpg" 
