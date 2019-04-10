@@ -29,7 +29,7 @@ Welcome to the Github for Perfect Colour - The paint system to automatically dis
 
 <p align="center">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/reasons.PNG" 
-	 title="Perfect Colour" width="700" height="250" ></a></p>
+	 title="Perfect Colour" width="700" height="220" ></a></p>
 
 Through the use of the GUI, you can select the colour using two different methods: by using the colour wheel or by selecting the colour you wish on an image which can then be made for you. 
 
