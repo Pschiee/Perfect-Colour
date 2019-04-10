@@ -55,12 +55,17 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 ## 2. Using the application
 
 Very simple! Follow the following steps:
-1. Open the application
+1. Open the application on your PC
 2. Select a colour on the wheel or by uploading a picture and choosing it from it.
 3. Specify the quantity of paint you want
 4. Click mix and voila!
 
 ## 3. FAQs
+
+**- Is there a phone appliacation available?
+
+There is no applications available for phones or tablets at the moment. However, we do consider this for a future development.
+
 **- Can other types of paints be used?**
 
 The machine is designed to produce colours with acrylic. The accuracy might vary with the quality and types of paint used. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
