@@ -86,6 +86,9 @@ https://github.com/Pschiee/Perfect-Colour/wiki
 Or visit our website:
 https://enquiriesperfectco.wixsite.com/perfectcolour
 
+Can also check out our instagram:
+https://www.instagram.com/perfect_colour_paint/
+
 ## 5. Credits
 
 <p align="right">
