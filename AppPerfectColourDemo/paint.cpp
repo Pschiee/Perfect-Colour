@@ -69,6 +69,25 @@ void paint::on_start_clicked()
     QPalette p = ui ->text -> palette();
     p.setColor(QPalette::Base, colour);
     ui -> text -> setPalette(p);
+    double desired = 10;
+    double cyan = 100 * (colour.cyan())/255;
+    double magenta = 100 * (colour.magenta())/255;
+    double yellow = 100 * (colour.yellow())/255;
+    double black = 100 * (colour.black())/255;
+   // qDebug("Cyan: %f \n",cyan);
+   // qDebug(": %f \n",magenta);
+   // qDebug("Yellow: %f \n",yellow);
+   // qDebug("Black: %f \n",black);
 
-    dispense.begin(colour.cyan(),colour.magenta(),colour.yellow(),colour.black());
+    dispense.init(cyan,magenta,yellow,black,desired);
+    /*dispense.dispense_colour(dispense.white);
+    ui->white->setChecked(true);
+    dispense.dispense_colour(dispense.cyan);
+    ui->cyan->setChecked(true);
+    dispense.dispense_colour(dispense.magenta);
+    ui->magenta->setChecked(true);
+    dispense.dispense_colour(dispense.yellow);
+    ui->yellow->setChecked(true);
+    dispense.dispense_colour(dispense.black);
+    ui->black->setChecked(true); */
 }

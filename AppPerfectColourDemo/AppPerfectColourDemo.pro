@@ -32,7 +32,8 @@ SOURCES += \
     paint.cpp \
     Motor.cpp \
     dispense.cpp \
-    chosen_colour.cpp
+    chosen_colour.cpp \
+    HX711.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -41,7 +42,8 @@ HEADERS += \
     paint.h \
     Motor.h \
     dispense.h \
-    chosen_colour.h
+    chosen_colour.h \
+    HX711.h
 
 FORMS += \
         mainwindow.ui \

@@ -45,16 +45,6 @@ void MainWindow::on_pushButton_2_clicked()
     emit sent(color);
     paint.setModal(true);
     paint.exec();
-
-
-	//int speed = 10;
-	//Motor Motor1;
-
-	//Motor1.init(0, 1, 2, 3, 4, 5, 10); // Initialise the Motor
-	
-		//Motor1.rotate1();	//Rotate the motor to each paint position
-		//delay(2000);
-
 }
 
 void MainWindow::on_pushButton_3_clicked()
@@ -66,10 +56,6 @@ void MainWindow::on_pushButton_3_clicked()
         QPalette p = ui ->colour_selected -> palette();
         p.setColor(QPalette::Base, QColor(color));
         ui -> colour_selected -> setPalette(p);
-        float cyan = color.cyan();
-        float magenta = color.magenta();
-        float yellow = color.yellow();
-        float black = color.black();
 
     }
 

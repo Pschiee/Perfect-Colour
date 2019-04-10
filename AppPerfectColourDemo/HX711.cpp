@@ -1,6 +1,6 @@
 #include "HX711.h"
 #include <stdint.h>
-#include <wiringPi.h>
+//#include <wiringPi.h>
 
 void bitWrite(uint8_t &x, unsigned int n, bool b) {
 	if (n <= 7 && n >= 0) {
@@ -17,8 +17,8 @@ void HX711::setup(int dout, int pd_sck, int gain) {
 	PD_SCK = pd_sck;
 	DOUT = dout;
 
-	pinMode(PD_SCK, OUTPUT);
-	pinMode(DOUT, INPUT);
+    //pinMode(PD_SCK, OUTPUT);
+    //pinMode(DOUT, INPUT);
 
 	set_gain(gain);
 }
@@ -28,7 +28,7 @@ HX711::~HX711() {
 }
 
 bool HX711::is_ready() {
-	return digitalRead(DOUT) == LOW;
+    //return digitalRead(DOUT) == LOW;
 }
 
 void HX711::set_gain(int gain) {
@@ -44,7 +44,7 @@ void HX711::set_gain(int gain) {
 		break;
 	}
 
-	digitalWrite(PD_SCK, LOW);
+    //digitalWrite(PD_SCK, LOW);
 	read();
 }
 
@@ -61,16 +61,16 @@ long HX711::read() {
 	// pulse the clock pin 24 times to read the data
 	for (int j = 3; j--;) {
 		for (char i = 8; i--;) {
-			digitalWrite(PD_SCK, HIGH);
-			bitWrite(data[j], i, digitalRead(DOUT));
-			digitalWrite(PD_SCK, LOW);
+        //	digitalWrite(PD_SCK, HIGH);
+        //	bitWrite(data[j], i, digitalRead(DOUT));
+        //	digitalWrite(PD_SCK, LOW);
 		}
 	}
 
 	// set the channel and the gain factor for the next reading using the clock pin
 	for (int i = 0; i < GAIN; i++) {
-		digitalWrite(PD_SCK, HIGH);
-		digitalWrite(PD_SCK, LOW);
+        //digitalWrite(PD_SCK, HIGH);
+        //digitalWrite(PD_SCK, LOW);
 	}
 
 	data[2] ^= 0x80;
@@ -108,10 +108,10 @@ void HX711::set_offset(long offset) {
 }
 
 void HX711::power_down() {
-	digitalWrite(PD_SCK, LOW);
-	digitalWrite(PD_SCK, HIGH);
+    //digitalWrite(PD_SCK, LOW);
+    //digitalWrite(PD_SCK, HIGH);
 }
 
 void HX711::power_up() {
-	digitalWrite(PD_SCK, LOW);
+    //digitalWrite(PD_SCK, LOW);
 }
