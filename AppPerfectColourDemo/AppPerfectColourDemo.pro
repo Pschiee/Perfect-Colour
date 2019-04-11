@@ -22,33 +22,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++11
+CONFIG += qt warn_on_debug
 
-SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
-    selectcolour.cpp \
-    my_qlabel.cpp \
-    paint.cpp \
-    Motor.cpp \
-    dispense.cpp \
-    chosen_colour.cpp \
-    HX711.cpp
+SOURCES += main.cpp mainwindow.cpp selectcolour.cpp my_qlabel.cpp  paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp
 
-HEADERS += \
-        mainwindow.h \
-    selectcolour.h \
-    my_qlabel.h \
-    paint.h \
-    Motor.h \
-    dispense.h \
-    chosen_colour.h \
-    HX711.h
+HEADERS += mainwindow.h selectcolour.h my_qlabel.h paint.h Motor.h dispense.h chosen_colour.h HX711.h
 
-FORMS += \
-        mainwindow.ui \
-    selectcolour.ui \
-    paint.ui
+FORMS += mainwindow.ui selectcolour.ui paint.ui
+    
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -58,3 +39,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     resources.qrc \
     resources.qrc
+
+INCLUDEPATH	+= /usr/local/include
+
+LIBS += -L/usr/local/lib -lwiringPi

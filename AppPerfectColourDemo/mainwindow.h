@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "chosen_colour.h"
+#include "Motor.h"
 
 
 namespace Ui {
@@ -24,12 +25,13 @@ public:
         return colour;
     }
     QColor selected_Colour;
+    Motor Motor1;
 
 public slots:
     void receive(QColor);
 
 private slots:
-	void on_pushButton_2_clicked();
+    void on_pushButton_2_clicked();
 
     void on_pushButton_3_clicked();
 

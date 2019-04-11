@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'selectcolour.ui'
 **
-** Created by: Qt User Interface Compiler version 5.6.3
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -38,7 +38,7 @@ public:
     {
         if (selectcolour->objectName().isEmpty())
             selectcolour->setObjectName(QStringLiteral("selectcolour"));
-        selectcolour->resize(734, 521);
+        selectcolour->resize(1920, 1080);
         selectcolour->setStyleSheet(QStringLiteral(""));
         verticalLayout = new QVBoxLayout(selectcolour);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
@@ -111,7 +111,7 @@ public:
     void retranslateUi(QDialog *selectcolour)
     {
         selectcolour->setWindowTitle(QApplication::translate("selectcolour", "Dialog", Q_NULLPTR));
-        label_browse->setText(QApplication::translate("selectcolour", "TextLabel", Q_NULLPTR));
+        label_browse->setText(QString());
         pushButton->setText(QApplication::translate("selectcolour", "Browse", Q_NULLPTR));
         Confirm->setText(QApplication::translate("selectcolour", "Confirm", Q_NULLPTR));
     } // retranslateUi

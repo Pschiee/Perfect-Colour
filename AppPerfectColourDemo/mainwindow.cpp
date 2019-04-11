@@ -8,6 +8,7 @@
 #include <QFile>
 #include <QImage>
 #include "chosen_colour.h"
+#include <wiringPi.h>
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -16,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //QMainWindow::showMaximized();
+    QMainWindow::showMaximized();
     QPixmap pic(":/img/img/Perfect_Colour_Logo_02.png");
 //    pic = pic.scaledToWidth(ui->label_logo->width(), Qt::SmoothTransformation);
 //    pic = pic.scaledToHeight(ui->label_logo->height(), Qt::SmoothTransformation);
@@ -39,12 +40,16 @@ void MainWindow::on_pushButton_2_clicked()
 {
 
     QColor color = chosenColour.get_colour();
-
+	
     paint paint;
     connect(this,SIGNAL(sent(QColor)), &paint, SLOT(received(QColor)));
     emit sent(color);
     paint.setModal(true);
-    paint.exec();
+    paint.exec(); 
+/*
+    wiringPiSetup();
+    Motor1.init(0,1,2,3,4,5,2);
+    Motor1.rotate(); */
 }
 
 void MainWindow::on_pushButton_3_clicked()

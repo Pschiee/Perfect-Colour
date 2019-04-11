@@ -1,6 +1,7 @@
 #include "paint.h"
 #include "ui_paint.h"
 #include "dispense.h"
+#include <wiringPi.h>
 
 
 paint::paint(QWidget *parent) :
@@ -8,6 +9,7 @@ paint::paint(QWidget *parent) :
     ui(new Ui::paint)
 {
     ui->setupUi(this);
+   // ui->setWindowState(Qt::WindowFullScreen);
 }
 
 paint::~paint()
@@ -65,11 +67,12 @@ void paint::received(QColor color) {
 void paint::on_start_clicked()
 {
     dispense dispense;
+    ui->text->setText("Now dispensing: White");
     QColor colour = chosenColour.get_colour();
     QPalette p = ui ->text -> palette();
     p.setColor(QPalette::Base, colour);
     ui -> text -> setPalette(p);
-    double desired = 10;
+    double desired = 500;
     double cyan = 100 * (colour.cyan())/255;
     double magenta = 100 * (colour.magenta())/255;
     double yellow = 100 * (colour.yellow())/255;
@@ -80,8 +83,9 @@ void paint::on_start_clicked()
    // qDebug("Black: %f \n",black);
 
     dispense.init(cyan,magenta,yellow,black,desired);
-    /*dispense.dispense_colour(dispense.white);
-    ui->white->setChecked(true);
+    delay(100);
+    dispense.dispense_colour(dispense.white); 
+    ui->white->setChecked(true); 
     dispense.dispense_colour(dispense.cyan);
     ui->cyan->setChecked(true);
     dispense.dispense_colour(dispense.magenta);
@@ -89,5 +93,5 @@ void paint::on_start_clicked()
     dispense.dispense_colour(dispense.yellow);
     ui->yellow->setChecked(true);
     dispense.dispense_colour(dispense.black);
-    ui->black->setChecked(true); */
-}
+    ui->black->setChecked(true); 
+}	

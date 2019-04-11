@@ -2,6 +2,11 @@
 
 #include "HX711.h"
 #include <QDebug>
+#include <wiringPi.h>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
 
 
 dispense::dispense(){}
@@ -14,9 +19,11 @@ void dispense::init(double c, double m, double y, double b,double desired) {
     double w2 = 0;
     double w3 = 0;
     double w4 = 0;
-   // HX711.setup(21, 22);
-    //HX711.set_scale(562.89);
-    //HX711.set_offset(8423263);
+    wiringPiSetup();
+    HX7111.setup(21, 22);
+    HX7111.set_scale(590.77);
+    HX7111.set_offset(8434280);
+    Motor1.init(0,1,2,3,4,5,2);
     //NEED TO CHECK THIS IN REAL LIFE
     if (c> 0){
           cyan = total * c * (c/100);
@@ -45,15 +52,29 @@ void dispense::init(double c, double m, double y, double b,double desired) {
     }
 
 void dispense::dispense_colour(double colour){
-    while((current_weight - previous_weight) < colour) {
+    previous_weight = HX7111.get_units();
+    current_weight = HX7111.get_units();
+    double sum = 0;
+    int i = 0;
+    
+    while((current_average - previous_average) < (colour + previous_final)) {
       //SQUEEZE colour
-      if (HX711.get_units()-current_weight <10)
-        {
-       current_weight = HX711.get_units();
-     }
+      if ((fabs(current_weight)-fabs(previous_weight)) <10) {
+       if (i<5) {
+	sum = sum + current_weight;
+	i++;
+	}
+       else {
+	previous_average = current_average;
+        current_average = sum;
+	cout << "Averaged: " << sum/i << " \n" << flush;
+	i = 0;
+	sum = 0;
+	}
     }
+  }
    //stop squeeze
-    previous_weight = current_weight;
-    Motor.rotate();
+    previous_final = current_average; 
+    Motor1.rotate();
     }
 
