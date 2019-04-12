@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/img">
-        <file>img/logo.png</file>
-        <file>img/logo_pc.jpg</file>
-        <file>img/Perfect_Colour_Logo_02.png</file>
-    </qresource>
-</RCC>
