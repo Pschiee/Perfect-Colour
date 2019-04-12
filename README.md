@@ -121,7 +121,7 @@ Mechanical Engineer and Marketing
 	
 
  <p align="right">
- <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
+ <img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Images/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="70" height="70" ></a></p>
 	 
 
