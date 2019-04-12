@@ -1,34 +1,39 @@
+#include "HX711.h"
+#include <iostream>
 #include <wiringPi.h>
+#include <cmath>
 
-#define PD_SCK 4
-#define DOUT 5
+using namespace std;
 
-long readData() {
-	long count = 0x0;
-	for (int i = 0; i < 24; i++) {
-		digitalWrite(PD_SCK, HIGH);
-		count = count << 1;
-		digitalWrite(PD_SCK, LOW);
-		if (DOUT == 1) {
-			count++;
-		}
-	}
-	digitalWrite(PD_SCK, HIGH);
-	delay(0.1);
-	digitalWrite(PD_SCK, LOW);
-	return count;
-}
+HX711 test;
 
-int main{
-
+int main(void) {
+	float prev_weight;
+	float current_weight;
+	float sum = 0;
+	int i = 0;
 	wiringPiSetup();
-	pinMode(PD_SCK, OUTPUT);
-	pinMode(DOUT, INPUT);
+	test.setup(21, 22);
+	test.set_scale(590.77);
+	test.set_offset(8434280);
+	prev_weight = 0;
+	while(1) {
+		current_weight = test.get_units();
+		if ((fabs(current_weight)-fabs(prev_weight)) <10)
+	       {
+			//cout << "Difference: " << fabs(current_weight)-fabs(prev_weight) << "\n" << flush;
+ 			if (i<5) {
+				sum = sum + current_weight;
+				i++;
+			}
+			else {
+				cout << "Averaged: " << sum/i << " \n" << flush;
+				i = 0;
+				sum = 0;
+			}
+		prev_weight = current_weight;
+     		}
 
-	if(DOUT == 0) {
-		long data = readData();
 	}
-
-
 
 }
