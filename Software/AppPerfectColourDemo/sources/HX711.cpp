@@ -1,6 +1,4 @@
 #include "HX711.h"
-#include <stdint.h>
-#include <wiringPi.h>
 
 void bitWrite(uint8_t &x, unsigned int n, bool b) {
 	if (n <= 7 && n >= 0) {

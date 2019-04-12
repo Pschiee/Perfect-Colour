@@ -1,6 +1,6 @@
 /**
  * @file paint.h
- * @author Callum Mason + Silviya Ivanova
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
  * @brief The class paint provides status of the current paint being dispensed.
  * @date 2019-04-12
  *

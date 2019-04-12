@@ -1,6 +1,6 @@
 /**
  * @file selectcolour.h
- * @author Callum Mason + Silviya Ivanova
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
  * @brief The class selectcolour provides the browse window allowing you to select colour from an image.
  * @date 2019-04-12
  *

@@ -1,4 +1,12 @@
-#include <wiringPi.h>
+/**
+ * @file Motor.cpp
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
+ * @brief The class Motor provides the functionality to rotate the paints to the appropriate position
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
 #include "Motor.h"
 
 //Constructor
@@ -22,7 +30,7 @@ void Motor::init(int input1, int input2, int input3, int input4, int firstenable
 	pinMode(firstenable, OUTPUT);
 	pinMode(secondenable, OUTPUT);
 	digitalWrite(firstenable, HIGH);
-     digitalWrite(secondenable, HIGH);
+  digitalWrite(secondenable, HIGH);
 }
 
 /*

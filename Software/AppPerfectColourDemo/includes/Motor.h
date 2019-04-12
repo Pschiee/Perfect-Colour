@@ -1,14 +1,14 @@
-#pragma once
-
 /**
  * @file Motor.h
- * @author Callum Mason
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
  * @brief The class Motor provides the functionality to rotate the paints to the appropriate position
- * @date 2019-03-02
+ * @date 2019-04-12
  *
  * @copyright Copyright (c) 2019
  *
  */
+
+#include <wiringPi.h>
 
 class Motor {
 

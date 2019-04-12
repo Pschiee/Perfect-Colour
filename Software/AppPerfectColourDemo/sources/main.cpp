@@ -1,3 +1,8 @@
+/*! \mainpage This is the perfect colour software documentation. Contained here are all of the methods and classes used in the project.
+ *  
+ 
+ */
+
 #include "mainwindow.h"
 #include <QApplication>
 

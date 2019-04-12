@@ -1,6 +1,6 @@
 /**
  * @file mainwindow.h
- * @author Callum Mason + Silviya Ivanova
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
  * @brief The class mainwindow provides the main window for the app.
  * @date 2019-04-12
  *

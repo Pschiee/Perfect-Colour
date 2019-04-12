@@ -1,4 +1,13 @@
-#include <wiringPi.h>
+/**
+ * @file dc_motor.cpp
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
+ * @brief The class Motor provides the functionality to rotate the paints to the appropriate position
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "dc_motor.h"
 
 class DCMotor

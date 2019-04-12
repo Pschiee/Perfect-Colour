@@ -6,7 +6,7 @@
 
 /**
  * @file dispense.h
- * @author Callum Mason
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
  * @briefThe class dispense combines all the individual elements required to dispense each colour of paint.
  * @date 2019-04-11
  *

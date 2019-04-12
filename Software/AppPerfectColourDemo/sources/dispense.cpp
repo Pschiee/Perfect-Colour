@@ -1,7 +1,7 @@
 /**
  * @file Dispense.cpp
  * @author Callum Mason + Silviya Ivanova
- * @brief The dispense class
+*  @briefThe class dispense combines all the individual elements required to dispense each colour of paint.
  * @date 2019-04-12
  *
  * @copyright Copyright (c) 2019
