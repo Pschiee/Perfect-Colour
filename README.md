@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://enquiriesperfectco.wixsite.com/perfectcolour">
-	<img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Perfect_Colour_Logo_01.png" 
+	<img src="https://github.com/Perfect-Colour/Perfect-Colour/blob/master/Images/Perfect_Colour_Logo_01.png" 
 	 title="Perfect Colour" width="500" height="500" ></a></p>
 
 <!-- display the social media buttons in your README -->
@@ -28,7 +28,7 @@
 Welcome to the Github for Perfect Colour - The paint system to automatically dispense the colour of paint that you want.
 
 <p align="center">
-	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/reasons.PNG" 
+	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Images/reasons.PNG" 
 	 title="Perfect Colour" width="700" height="210" ></a></p>
 
 Through the use of the GUI, you can select the colour using two different methods: by using the colour wheel or by selecting the colour you wish on an image which can then be made for you. 
