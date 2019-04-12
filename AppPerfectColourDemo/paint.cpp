@@ -1,3 +1,13 @@
+/**
+ * @file pain.cpp
+ * @author Callum Mason + Silviya Ivanova
+ * @brief The status window while paint is being dispensed
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "paint.h"
 #include "ui_paint.h"
 #include "dispense.h"
@@ -9,7 +19,6 @@ paint::paint(QWidget *parent) :
     ui(new Ui::paint)
 {
     ui->setupUi(this);
-   // ui->setWindowState(Qt::WindowFullScreen);
 }
 
 paint::~paint()
@@ -77,10 +86,6 @@ void paint::on_start_clicked()
     double magenta = 100 * (colour.magenta())/255;
     double yellow = 100 * (colour.yellow())/255;
     double black = 100 * (colour.black())/255;
-   // qDebug("Cyan: %f \n",cyan);
-   // qDebug(": %f \n",magenta);
-   // qDebug("Yellow: %f \n",yellow);
-   // qDebug("Black: %f \n",black);
 
     dispense.init(cyan,magenta,yellow,black,desired);
     delay(100);

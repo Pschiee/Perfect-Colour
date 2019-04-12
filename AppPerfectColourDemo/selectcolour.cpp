@@ -1,3 +1,13 @@
+/**
+ * @file selectcolour.cpp
+ * @author Callum Mason + Silviya Ivanova
+ * @brief The browse window for the app
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "selectcolour.h"
 #include "ui_selectcolour.h"
 #include "mainwindow.h"
@@ -24,12 +34,6 @@ selectcolour::selectcolour(QWidget *parent) :
 	connect(ui->label_browse, SIGNAL(Mouse_Pos()),this,SLOT(Mouse_current_pos()));
 	connect(ui->label_browse, SIGNAL(Mouse_Pressed()),this,SLOT(Mouse_Pressed()));
 	connect(ui->label_browse, SIGNAL(Mouse_Left()),this,SLOT(Mouse_left()));
-/*
-	getName();
-	loadImage();
-	image = image.scaledToWidth(ui->label_browse->width(),Qt::SmoothTransformation);
-	image = image.scaledToHeight(ui->label_browse->height(),Qt::SmoothTransformation);
-	ui->label_browse->setPixmap(QPixmap::fromImage(image)); */
 }
 selectcolour::~selectcolour()
 {
@@ -59,9 +63,3 @@ void selectcolour::Mouse_current_pos()
 	ui->colour_browse -> setPalette(b);
 	emit send(tempColor);
 }
-
-void selectcolour::Mouse_Pressed() {
-}
-
-void selectcolour::Mouse_left() {
-} 

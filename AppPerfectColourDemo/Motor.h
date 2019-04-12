@@ -4,7 +4,6 @@
  * @file Motor.h
  * @author Callum Mason
  * @brief The class Motor provides the functionality to rotate the paints to the appropriate position
- * @version 0.1
  * @date 2019-03-02
  *
  * @copyright Copyright (c) 2019
@@ -37,8 +36,7 @@ public:
 	/**
 	   * @brief Roates the sensor 72 degrees.
 	   */
-
-    void rotate();
+  void rotate();
 
 private:
 	//gpio connections

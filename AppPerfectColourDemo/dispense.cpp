@@ -1,3 +1,13 @@
+/**
+ * @file Dispense.cpp
+ * @author Callum Mason + Silviya Ivanova
+ * @brief The dispense class
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "dispense.h"
 
 #include "HX711.h"
