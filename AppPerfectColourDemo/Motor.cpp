@@ -5,7 +5,7 @@
 Motor::Motor(){}
 
 /*
-	Function to initiliase the pins on the pi that connect to the inputs and enables of the L298. Also sets the speed for totation
+	Function to initiliase the pins on the pi that connect to the inputs and enables of the L298. Also sets the speed for rotation
 */
 
 void Motor::init(int input1, int input2, int input3, int input4, int firstenable, int secondenable, int speed) {

@@ -4,8 +4,7 @@
  * @file Motor.h
  * @author Callum Mason
  * @briefThe class Motor provides the functionality to rotate the paints to the appropriate position
- * @version 0.1
- * @date 2019-03-02
+ * @date 2019-04-11
  *
  * @copyright Copyright (c) 2019
  *
