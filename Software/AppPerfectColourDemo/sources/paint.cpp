@@ -8,9 +8,9 @@
  *
  */
 
-#include "paint.h"
+#include "includes/paint.h"
 #include "ui_paint.h"
-#include "dispense.h"
+#include "includes/dispense.h"
 #include <wiringPi.h>
 
 

@@ -8,13 +8,8 @@
  *
  */
 
-#include "dispense.h"
-
-#include "HX711.h"
-#include <QDebug>
-#include <wiringPi.h>
-#include <iostream>
-#include <cmath>
+#include "includes/includes.h"
+#include <stdio.h>
 
 using namespace std;
 
@@ -72,7 +67,8 @@ void dispense::dispense_colour(double colour) {
   int i = 0;
 
   while ((current_average - previous_average) < (colour + previous_final)) {
-    //SQUEEZE colour
+    DC.forward();
+    Clock::time_point t0 = Clock::now();
     if ((fabs(current_weight) - fabs(previous_weight)) < 10) {
       if (i < 5) {
         sum = sum + current_weight;
@@ -87,7 +83,10 @@ void dispense::dispense_colour(double colour) {
       }
     }
   }
-  //stop squeeze
+  Clock::time_point t1 = Clock::now();
+  milliseconds ms = std::chrono::duration_cast<milliseconds>(t1-t0);
+  DC.backward();
+  delay(ms.count());
   previous_final = current_average;
   Motor1.rotate();
 }

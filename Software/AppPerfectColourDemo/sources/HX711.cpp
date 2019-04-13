@@ -1,4 +1,4 @@
-#include "HX711.h"
+#include "includes/HX711.h"
 
 void bitWrite(uint8_t &x, unsigned int n, bool b) {
 	if (n <= 7 && n >= 0) {

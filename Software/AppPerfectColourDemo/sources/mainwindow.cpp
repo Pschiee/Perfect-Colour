@@ -8,16 +8,16 @@
  *
  */
 
-#include "mainwindow.h"
+#include "includes/mainwindow.h"
 #include "ui_mainwindow.h"
-#include "selectcolour.h"
-#include "paint.h"
+#include "includes/selectcolour.h"
+#include "includes/paint.h"
 #include <QColorDialog>
 #include <QColor>
 #include <QFileDialog>
 #include <QFile>
 #include <QImage>
-#include "chosen_colour.h"
+#include "includes/chosen_colour.h"
 #include <wiringPi.h>
 
 

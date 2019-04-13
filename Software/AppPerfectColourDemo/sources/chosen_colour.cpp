@@ -1,4 +1,4 @@
-#include "chosen_colour.h"
+#include "includes/chosen_colour.h"
 #include <QColor>
 
 chosen_colour::chosen_colour(void)

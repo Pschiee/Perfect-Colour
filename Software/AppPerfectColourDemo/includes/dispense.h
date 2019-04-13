@@ -1,8 +1,10 @@
 #ifndef DISPENSE_H
 #define DISPENSE_H
 
-#include "HX711.h"
-#include "Motor.h"
+#include "includes/HX711.h"
+#include "includes/Motor.h"
+#include "includes/dc_motor.h"
+#include <chrono>
 
 /**
  * @file dispense.h
@@ -24,9 +26,11 @@ public:
 
     dispense();
 
-
+    typedef std::chrono::high_resolution_clock Clock;
+    typedef std::chrono::milliseconds milliseconds;
     HX711 HX7111; //Setting up the Weight sensor
     Motor Motor1; // Setting up the motor to rotate paints
+    DCMotor DC
     double cyan = 0; // Amount of cyan paint to be dispensed in grams
     double magenta = 0; // Amount of magenta paint to be dispensed in grams
     double yellow = 0; // Amount of yellow paint to be dispensed in grams
@@ -57,5 +61,6 @@ private:
       double previous_average = 0; // The previous average weight. 
       double current_average = 0; // The current average weight.
       double previous_final = 0; // The previous weight of the paint holder when the last paint had finished being dispensed.
+
 };
 #endif // DISPENSE_H

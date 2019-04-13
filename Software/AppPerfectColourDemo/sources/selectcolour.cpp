@@ -8,11 +8,10 @@
  *
  */
 
-#include "selectcolour.h"
+#include "includes/selectcolour.h"
 #include "ui_selectcolour.h"
-#include "mainwindow.h"
-#include "my_qlabel.h"
-#include "Motor.h"
+#include "includes/mainwindow.h"
+#include "includes/Motor.h"
 #include <QColorDialog>
 #include <QColor>
 #include <QFileDialog>

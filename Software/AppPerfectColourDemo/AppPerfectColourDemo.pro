@@ -24,11 +24,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += qt warn_on_debug
 
-SOURCES += main.cpp mainwindow.cpp selectcolour.cpp my_qlabel.cpp  paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp
+SOURCES += sources/main.cpp sources/mainwindow.cpp sources/selectcolour.cpp sources/paint.cpp sources/Motor.cpp sources/dispense.cpp sources/chosen_colour.cpp sources/HX711.cpp
 
-HEADERS += mainwindow.h selectcolour.h my_qlabel.h paint.h Motor.h dispense.h chosen_colour.h HX711.h
+HEADERS += includes/mainwindow.h includes/selectcolour.h includes/paint.h includes/Motor.h includes/dispense.h includes/chosen_colour.h includes/HX711.h \
+    includes/includes.h \
+    includes/dc_motor.h
 
-FORMS += mainwindow.ui selectcolour.ui paint.ui
+FORMS += ui_files/mainwindow.ui ui_files/selectcolour.ui ui_files/paint.ui
     
 
 # Default rules for deployment.
@@ -36,9 +38,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-RESOURCES += \
-    resources.qrc \
-    resources.qrc
+RESOURCES += qt\resources.qrc
 
 INCLUDEPATH	+= /usr/local/include
 

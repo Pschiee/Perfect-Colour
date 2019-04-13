@@ -3,7 +3,7 @@
  
  */
 
-#include "mainwindow.h"
+#include "includes/mainwindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
