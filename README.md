@@ -39,11 +39,13 @@ Through the use of the GUI, you can select the colour using two different method
 
 **2. Using the application**
 
-**3. FAQs**
+**3. Demonstration**
 
-**4. Further Information**
+**4. FAQs**
 
-**5. Credits**
+**5. Further Information**
+
+**6. Credits**
 
 ## 1. How to get started
 
@@ -60,7 +62,11 @@ Very simple! Follow the following steps:
 3. Specify the quantity of paint you want
 4. Click mix and voila!
 
-## 3. FAQs
+## 3. Demonstration
+
+(link)
+
+## 4. FAQs
 
 **- Is there a phone appliacation available?
 
