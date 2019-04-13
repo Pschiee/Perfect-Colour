@@ -6,4 +6,4 @@ It features the following:
 
 - Capacitors: two ceramic 100nanoFarad and two electrolytic 1microFarad.
 
-- Cennections: one 4-pin and five 2-pin MOLEX connectors.
+- Connections: one 4-pin and five 2-pin MOLEX connectors.
