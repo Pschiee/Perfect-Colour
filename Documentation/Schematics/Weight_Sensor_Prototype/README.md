@@ -1,4 +1,4 @@
-The files in this folder contain the electronic design created for the weight sensor used for the project.
+The files in this folder contain the prototype electronic design created for the weight sensor used for the project.
 
 It implements the following:
 - Chip: HX711.
