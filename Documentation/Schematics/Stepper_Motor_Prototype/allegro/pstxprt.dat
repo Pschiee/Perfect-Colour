@@ -1,0 +1,200 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Feb-26-2019 at 16:43:57 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='DESIGN2';
+ POST_TIME='May 13 2018 17:50:17';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ 0.1C1 '100NF_CAPACITOR_GU-C0805_100NF_':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS1355@100NF_CAPACITOR.100NF_CAPACITOR.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins1355@\100nf_capacitor\.\100nf_capacitor.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins1355@\100nf_capacitor\.\100nf_capacitor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ 0.1C2 '100NF_CAPACITOR_GU-C0805_100NF_':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS1387@100NF_CAPACITOR.100NF_CAPACITOR.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins1387@\100nf_capacitor\.\100nf_capacitor.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins1387@\100nf_capacitor\.\100nf_capacitor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ 2J1 'MOLEX2_GU-MOLEX2_MOLEX2':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS4561@LIBRARY1.MOLEX2.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins4561@library1.\molex2.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins4561@library1.\molex2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ 2J2 'MOLEX2_GU-MOLEX2_MOLEX2':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS4609@LIBRARY1.MOLEX2.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins4609@library1.\molex2.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins4609@library1.\molex2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ 4J1 'MOLEX_4_GU-MOLEX4_MOLEX_4':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS4163@MOLEX4.MOLEX_4.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins4163@molex4.\molex_4.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins4163@molex4.\molex_4.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C1 'CAP_E_GU-CAPCYL100_CAP_E':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS6952@CAP_E.CAP_E.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins6952@cap_e.\cap_e.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins6952@cap_e.\cap_e.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP_E_GU-CAPCYL100_CAP_E':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS7017@CAP_E.CAP_E.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins7017@cap_e.\cap_e.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins7017@cap_e.\cap_e.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS136@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins136@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins136@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS152@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins152@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins152@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS168@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins168@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins168@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS184@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins184@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins184@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS200@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins200@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins200@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS216@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins216@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins216@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS232@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins232@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins232@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 '1N5814_GU-RC400_1N5814':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS248@DIODE.1N5814.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins248@diode.\1n5814.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins248@diode.\1n5814.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'MOL2_GU-MOLEX2_MOL2':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS5238@MOL2.MOL2.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins5238@mol2.\mol2.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins5238@mol2.\mol2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 'MOL2_GU-MOLEX2_MOL2':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS7440@MOL2.MOL2.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins7440@mol2.\mol2.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins7440@mol2.\mol2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J3 'MOL2_GU-MOLEX2_MOL2':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS7516@MOL2.MOL2.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins7516@mol2.\mol2.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins7516@mol2.\mol2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'L298N_GU-L298-HSINK_L298N':;
+
+SECTION_NUMBER 1
+ '@DESIGN2.SCHEMATIC1(SCH_1):INS52@L298N.L298N.NORMAL(CHIPS)':
+ C_PATH='@design2.schematic1(sch_1):ins52@l298n.\l298n.normal\(chips)',
+ P_PATH='@design2.schematic1(sch_1):page1_ins52@l298n.\l298n.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

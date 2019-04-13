@@ -1,0 +1,147 @@
+(ExpressProject "Design2"
+  (ProjectVersion "19981106")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\l298n\l298n.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\l298n\l298n.olb"))
+      (File ".\library1.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library1.olb"))
+      (File "..\..\schematic and library parts\100nf_capacitor.olb"
+        (Type "Schematic Library")
+        (DisplayName "..\..\schematic and library parts\100nf_capacitor.olb"))
+      (File "..\..\schematic and library parts\molex4.olb"
+        (Type "Schematic Library")
+        (DisplayName "..\..\schematic and library parts\molex4.olb"))
+      (File "..\..\schematic and library parts\molex2.olb"
+        (Type "Schematic Library")
+        (DisplayName "..\..\schematic and library parts\molex2.olb"))
+      (File ".\mol2.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\mol2.olb"))
+      (File ".\cap_e.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\cap_e.olb"))
+      (File ".\library4.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library4.olb")))
+    (NoModify)
+    (File ".\stepper_motor_schematic_prototype.dsn"
+      (Type "Schematic Design")
+      (DisplayName ".\stepper_motor_schematic_prototype.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "allegro")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "TRUE")
+    ("Allegro Netlist Output Board File"
+       "D:\PCB for real time\PCB for motor\allegro\motor_driver_v2.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    ("Allegro Netlist Input Board File"
+       "D:\PCB for real time\PCB for motor\allegro\blank_3by3.brd"))
+  (Folder "Outputs"
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (MOL2
+      (FullPartName "MOL2.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PCB FOR MOTOR\MOL2.OLB")
+      (DeviceIndex "0"))
+    (molex2
+      (FullPartName "molex2.Normal")
+      (LibraryName
+         "D:\PCB FOR REAL TIME\SCHEMATIC AND LIBRARY PARTS\MOLEX2.OLB")
+      (DeviceIndex "0"))
+    (Cap_e
+      (FullPartName "Cap_e.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PCB FOR MOTOR\CAP_E.OLB")
+      (DeviceIndex "0"))
+    (e_cap
+      (FullPartName "e_cap.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PCB FOR MOTOR\E_CAP.OLB")
+      (DeviceIndex "0"))
+    (MOLEX_4
+      (FullPartName "MOLEX_4.Normal")
+      (LibraryName
+         "D:\PCB FOR REAL TIME\SCHEMATIC AND LIBRARY PARTS\MOLEX4.OLB")
+      (DeviceIndex "0"))
+    (100nF_Capacitor
+      (FullPartName "100nF_Capacitor.Normal")
+      (LibraryName
+         "D:\PCB FOR REAL TIME\SCHEMATIC AND LIBRARY PARTS\100NF_CAPACITOR.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName
+         "C:\PROGRAM FILES\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (MOLEX2
+      (FullPartName "MOLEX2.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PCB FOR MOTOR\L298N\L298N.OLB")
+      (DeviceIndex "0"))
+    (1N5814
+      (FullPartName "1N5814.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName
+         "C:\PROGRAM FILES\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (L298N
+      (FullPartName "L298N.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PCB FOR MOTOR\L298N\L298N.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Program Files\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (MPSSessionName "2141838i")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\stepper_motor_schematic_prototype.dsn")
+      (Path "Design Resources" ".\stepper_motor_schematic_prototype.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 150"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1658 52 520")
+        (Scroll "-19 20")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PCB FOR REAL TIME\GITHUB\STEPPER_MOTOR_PROTOTYPE\STEPPER_MOTOR_SCHEMATIC_PROTOTYPE.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (ISPCBBASICLICENSE "false"))
