@@ -1,0 +1,4 @@
+/home/pi/Perfect-Colour/Weight Sensor/Build/CMakeFiles/rebuild_cache.dir
+/home/pi/Perfect-Colour/Weight Sensor/Build/CMakeFiles/edit_cache.dir
+/home/pi/Perfect-Colour/Weight Sensor/Build/CMakeFiles/Weight.dir
+/home/pi/Perfect-Colour/Weight Sensor/Build/CMakeFiles/HX711.dir
