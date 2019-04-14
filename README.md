@@ -84,7 +84,7 @@ Indeed. You can either choose it within a palette or even take a picture and sel
 
 Yes! CMYK plus white, when mixed correctly, should be able to produce any colour. 
 
-## 4. Further Information
+## 5. Further Information
 
 For further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
 
@@ -95,7 +95,7 @@ Or visit our website <a href="https://enquiriesperfectco.wixsite.com/perfectcolo
 Can also check out our <a href="https://www.instagram.com/perfect_colour_paint/">instagram</a>.
 
 
-## 5. Credits
+## 6. Credits
 
 <p align="right">
 
