@@ -48,12 +48,15 @@ Through the use of the GUI, you can select the colour using two different method
 **6. Credits**
 
 ##### Table of Contents  
+
 [1. How to get started](#1. How to get started)  
 [Emphasis](#emphasis)  
 ...snip...    
 <a name="1. How to get started"/>
 
-## Headers
+<project URL#<header name>
+<Perfect-Colour https://github.com/Pschiee/Perfect-Colour#1-how-to-get-started#<1. how to get started>
+
 
 ## 1. How to get started
 
