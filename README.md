@@ -48,7 +48,7 @@ Through the use of the GUI, you can select the colour using two different method
 **6. Credits**
 
 ##### Table of Contents  
-[Headers](#headers)  
+[1. How to get started](#1. How to get started)  
 [Emphasis](#emphasis)  
 ...snip...    
 <a name="headers"/>
