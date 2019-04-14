@@ -42,9 +42,6 @@ Through the use of the GUI, you can select the colour using two different method
 5. [Further Information](#further-information)
 6. [Credits](#credits)
 
-## Example2
-## Third Example
-
 
 ## How to get started
 
