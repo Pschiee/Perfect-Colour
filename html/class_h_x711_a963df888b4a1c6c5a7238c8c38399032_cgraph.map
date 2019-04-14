@@ -1,0 +1,6 @@
+<map id="HX711::setup" name="HX711::setup">
+<area shape="rect" id="node1" title="Initialises the weight sensor." alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node2" href="$class_h_x711.html#af282f243b89172103237fb42dfe4f845" title=" " alt="" coords="152,5,268,32"/>
+<area shape="rect" id="node3" href="$class_h_x711.html#a6f62858732ea430a7d61d23cdd5c90d0" title=" " alt="" coords="316,5,408,32"/>
+<area shape="rect" id="node4" href="$class_h_x711.html#aab3f9242a603af7dfe396584d0e4cb3b" title=" " alt="" coords="456,5,572,32"/>
+</map>
