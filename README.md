@@ -51,7 +51,7 @@ Through the use of the GUI, you can select the colour using two different method
 [1. How to get started](#1. How to get started)  
 [Emphasis](#emphasis)  
 ...snip...    
-<a name="headers"/>
+<a name="1. How to get started"/>
 
 ## Headers
 
