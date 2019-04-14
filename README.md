@@ -47,6 +47,14 @@ Through the use of the GUI, you can select the colour using two different method
 
 **6. Credits**
 
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+
+## Headers
+
 ## 1. How to get started
 
 Once you own a Perfect Colour Machine, follow 3 simple steps:
