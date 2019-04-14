@@ -35,7 +35,7 @@ Through the use of the GUI, you can select the colour using two different method
 
 ## Contents
 
-**1. How to get started**
+**How to get started**
 
 **2. Using the application**
 
