@@ -10,4 +10,4 @@ Files with description as follwos:
 
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Documentation/PCB_Design/PCB_Prototypes/Stepper_Motor/Stepper_Motor_Prototype_PCB.PNG" 
-	 title="Pi Shield Bottom" width="600" height="450" ></a></p>
+	 title="Stepper Motor PCB Prototype" width="600" height="600" ></a></p>
