@@ -35,7 +35,7 @@ Through the use of the GUI, you can select the colour using two different method
 
 ## Contents
 
-**How to get started**
+**1. How to get started**
 
 **2. Using the application**
 
@@ -55,10 +55,10 @@ Through the use of the GUI, you can select the colour using two different method
 <a name="1. How to get started"/>
 
 <project URL#<header name>
-<Perfect-Colour https://github.com/Pschiee/Perfect-Colour#1-how-to-get-started#<1. how to get started>
+<Perfect-Colour https://github.com/Pschiee/Perfect-Colour#1-how-to-get-started#<how to get started>
 
 
-## 1. How to get started
+## How to get started
 
 Once you own a Perfect Colour Machine, follow 3 simple steps:
 1. Obtain the 5 primary paints and load them to the machine
