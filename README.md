@@ -86,8 +86,7 @@ Yes! CMYK plus white, when mixed correctly, should be able to produce any colour
 
 ## 4. Further Information
 
-For further information please visit our wiki: 
-https://github.com/Pschiee/Perfect-Colour/wiki
+For further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>  
 
 For software documentation please visit:
 https://pschiee.github.io/Perfect-Colour/
