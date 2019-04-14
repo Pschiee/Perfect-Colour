@@ -60,7 +60,11 @@ Very simple! Follow the following steps:
 
 ## Demonstration
 
-(link)
+- First Water Test
+
+- First Paint Test
+
+- Second Paint Test
 
 ## FAQs
 
