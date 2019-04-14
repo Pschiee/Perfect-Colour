@@ -10,4 +10,4 @@ Files with description as follwos:
 
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Documentation/PCB_Design/PCB_Prototypes/Weight_Sensor/Weight_Sensor_Prototype.PNG" 
-	 title="Weight Sensor PCB Prototype" width="600" height="200" ></a></p>
+	 title="Weight Sensor PCB Prototype" width="600" height="300" ></a></p>
