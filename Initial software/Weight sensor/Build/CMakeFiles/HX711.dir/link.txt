@@ -1,0 +1,2 @@
+/usr/bin/ar qc libHX711.a  CMakeFiles/HX711.dir/HX711.cpp.o
+/usr/bin/ranlib libHX711.a
