@@ -50,6 +50,7 @@ OBJECTS_DIR   = ./
 
 SOURCES       = main.cpp \
 		mainwindow.cpp \
+		myThread.cpp \
 		selectcolour.cpp \
 		weight.cpp \
 		paint.cpp \
@@ -58,13 +59,17 @@ SOURCES       = main.cpp \
 		chosen_colour.cpp \
 		HX711.cpp \
 		my_qlabel.cpp \
-		dc_motor.cpp qrc_resources.cpp \
+		dc_motor.cpp \
+		cleanpaint.cpp qrc_resources.cpp \
 		moc_mainwindow.cpp \
 		moc_selectcolour.cpp \
 		moc_paint.cpp \
-		moc_my_qlabel.cpp
+		moc_myThread.cpp \
+		moc_my_qlabel.cpp \
+		moc_cleanpaint.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
+		myThread.o \
 		selectcolour.o \
 		weight.o \
 		paint.o \
@@ -74,11 +79,14 @@ OBJECTS       = main.o \
 		HX711.o \
 		my_qlabel.o \
 		dc_motor.o \
+		cleanpaint.o \
 		qrc_resources.o \
 		moc_mainwindow.o \
 		moc_selectcolour.o \
 		moc_paint.o \
-		moc_my_qlabel.o
+		moc_myThread.o \
+		moc_my_qlabel.o \
+		moc_cleanpaint.o
 DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/common/unix.conf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/common/linux.conf \
@@ -146,16 +154,18 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		AppPerfectColourDemo.pro mainwindow.h \
 		selectcolour.h \
 		paint.h \
+		myThread.h \
 		Motor.h \
 		dispense.h \
 		chosen_colour.h \
 		HX711.h \
 		my_qlabel.h \
-		includes.h \
+		cleanpaint.h \
 		dc_motor.h \
 		weight.h \
 		dc_motor.h main.cpp \
 		mainwindow.cpp \
+		myThread.cpp \
 		selectcolour.cpp \
 		weight.cpp \
 		paint.cpp \
@@ -164,7 +174,8 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		chosen_colour.cpp \
 		HX711.cpp \
 		my_qlabel.cpp \
-		dc_motor.cpp
+		dc_motor.cpp \
+		cleanpaint.cpp
 QMAKE_TARGET  = AppPerfectColourDemo
 DESTDIR       = 
 TARGET        = AppPerfectColourDemo
@@ -173,7 +184,7 @@ TARGET        = AppPerfectColourDemo
 first: all
 ####### Build rules
 
-$(TARGET): ui_mainwindow.h ui_selectcolour.h ui_paint.h $(OBJECTS)  
+$(TARGET): ui_mainwindow.h ui_selectcolour.h ui_paint.h ui_cleanpaint.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: AppPerfectColourDemo.pro /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++/qmake.conf /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
@@ -330,9 +341,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents resources.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.h selectcolour.h paint.h Motor.h dispense.h chosen_colour.h HX711.h my_qlabel.h includes.h dc_motor.h weight.h dc_motor.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp mainwindow.cpp selectcolour.cpp weight.cpp paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp my_qlabel.cpp dc_motor.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.ui selectcolour.ui paint.ui $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.h selectcolour.h paint.h myThread.h Motor.h dispense.h chosen_colour.h HX711.h my_qlabel.h cleanpaint.h dc_motor.h weight.h dc_motor.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp mainwindow.cpp myThread.cpp selectcolour.cpp weight.cpp paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp my_qlabel.cpp dc_motor.cpp cleanpaint.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.ui selectcolour.ui paint.ui cleanpaint.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -366,16 +377,10 @@ qrc_resources.cpp: resources.qrc \
 		img/logo_pc.jpg
 	/usr/lib/arm-linux-gnueabihf/qt5/bin/rcc -name resources resources.qrc -o qrc_resources.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_selectcolour.cpp moc_paint.cpp moc_my_qlabel.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_selectcolour.cpp moc_paint.cpp moc_myThread.cpp moc_my_qlabel.cpp moc_cleanpaint.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_selectcolour.cpp moc_paint.cpp moc_my_qlabel.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_selectcolour.cpp moc_paint.cpp moc_myThread.cpp moc_my_qlabel.cpp moc_cleanpaint.cpp
 moc_mainwindow.cpp: chosen_colour.h \
-		includes.h \
-		dispense.h \
-		HX711.h \
-		Motor.h \
-		dc_motor.h \
-		weight.h \
 		mainwindow.h \
 		/usr/lib/arm-linux-gnueabihf/qt5/bin/moc
 	/usr/lib/arm-linux-gnueabihf/qt5/bin/moc $(DEFINES) -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Perfect-Colour/Software/AppPerfectColourDemo -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/arm-linux-gnueabihf/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/arm-linux-gnueabihf/6/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include mainwindow.h -o moc_mainwindow.cpp
@@ -389,15 +394,26 @@ moc_paint.cpp: chosen_colour.h \
 		/usr/lib/arm-linux-gnueabihf/qt5/bin/moc
 	/usr/lib/arm-linux-gnueabihf/qt5/bin/moc $(DEFINES) -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Perfect-Colour/Software/AppPerfectColourDemo -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/arm-linux-gnueabihf/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/arm-linux-gnueabihf/6/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include paint.h -o moc_paint.cpp
 
+moc_myThread.cpp: weight.h \
+		HX711.h \
+		myThread.h \
+		/usr/lib/arm-linux-gnueabihf/qt5/bin/moc
+	/usr/lib/arm-linux-gnueabihf/qt5/bin/moc $(DEFINES) -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Perfect-Colour/Software/AppPerfectColourDemo -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/arm-linux-gnueabihf/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/arm-linux-gnueabihf/6/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include myThread.h -o moc_myThread.cpp
+
 moc_my_qlabel.cpp: my_qlabel.h \
 		/usr/lib/arm-linux-gnueabihf/qt5/bin/moc
 	/usr/lib/arm-linux-gnueabihf/qt5/bin/moc $(DEFINES) -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Perfect-Colour/Software/AppPerfectColourDemo -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/arm-linux-gnueabihf/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/arm-linux-gnueabihf/6/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include my_qlabel.h -o moc_my_qlabel.cpp
 
+moc_cleanpaint.cpp: Motor.h \
+		cleanpaint.h \
+		/usr/lib/arm-linux-gnueabihf/qt5/bin/moc
+	/usr/lib/arm-linux-gnueabihf/qt5/bin/moc $(DEFINES) -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Perfect-Colour/Software/AppPerfectColourDemo -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/arm-linux-gnueabihf/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/arm-linux-gnueabihf/6/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/6/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include cleanpaint.h -o moc_cleanpaint.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h ui_selectcolour.h ui_paint.h
+compiler_uic_make_all: ui_mainwindow.h ui_selectcolour.h ui_paint.h ui_cleanpaint.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h ui_selectcolour.h ui_paint.h
+	-$(DEL_FILE) ui_mainwindow.h ui_selectcolour.h ui_paint.h ui_cleanpaint.h
 ui_mainwindow.h: mainwindow.ui \
 		/usr/lib/arm-linux-gnueabihf/qt5/bin/uic
 	/usr/lib/arm-linux-gnueabihf/qt5/bin/uic mainwindow.ui -o ui_mainwindow.h
@@ -411,6 +427,10 @@ ui_paint.h: paint.ui \
 		/usr/lib/arm-linux-gnueabihf/qt5/bin/uic
 	/usr/lib/arm-linux-gnueabihf/qt5/bin/uic paint.ui -o ui_paint.h
 
+ui_cleanpaint.h: cleanpaint.ui \
+		/usr/lib/arm-linux-gnueabihf/qt5/bin/uic
+	/usr/lib/arm-linux-gnueabihf/qt5/bin/uic cleanpaint.ui -o ui_cleanpaint.h
+
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
 compiler_yacc_impl_make_all:
@@ -422,48 +442,35 @@ compiler_clean: compiler_rcc_clean compiler_moc_header_clean compiler_uic_clean
 ####### Compile
 
 main.o: main.cpp mainwindow.h \
-		chosen_colour.h \
-		includes.h \
-		dispense.h \
-		HX711.h \
-		Motor.h \
-		dc_motor.h \
-		weight.h
+		chosen_colour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 mainwindow.o: mainwindow.cpp mainwindow.h \
 		chosen_colour.h \
-		includes.h \
-		dispense.h \
-		HX711.h \
-		Motor.h \
-		dc_motor.h \
-		weight.h \
 		ui_mainwindow.h \
 		selectcolour.h \
-		paint.h
+		paint.h \
+		cleanpaint.h \
+		Motor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
+
+myThread.o: myThread.cpp myThread.h \
+		weight.h \
+		HX711.h \
+		dispense.h \
+		Motor.h \
+		dc_motor.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o myThread.o myThread.cpp
 
 selectcolour.o: selectcolour.cpp selectcolour.h \
 		ui_selectcolour.h \
 		my_qlabel.h \
 		mainwindow.h \
-		chosen_colour.h \
-		includes.h \
-		dispense.h \
-		HX711.h \
-		Motor.h \
-		dc_motor.h \
-		weight.h
+		chosen_colour.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o selectcolour.o selectcolour.cpp
 
-weight.o: weight.cpp includes.h \
-		chosen_colour.h \
-		dispense.h \
-		HX711.h \
-		Motor.h \
-		dc_motor.h \
-		weight.h
+weight.o: weight.cpp weight.h \
+		HX711.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o weight.o weight.cpp
 
 paint.o: paint.cpp paint.h \
@@ -472,19 +479,15 @@ paint.o: paint.cpp paint.h \
 		dispense.h \
 		HX711.h \
 		Motor.h \
-		dc_motor.h
+		dc_motor.h \
+		myThread.h \
+		weight.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o paint.o paint.cpp
 
 Motor.o: Motor.cpp Motor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Motor.o Motor.cpp
 
-dispense.o: dispense.cpp includes.h \
-		chosen_colour.h \
-		dispense.h \
-		HX711.h \
-		Motor.h \
-		dc_motor.h \
-		weight.h
+dispense.o: dispense.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dispense.o dispense.cpp
 
 chosen_colour.o: chosen_colour.cpp chosen_colour.h
@@ -499,6 +502,13 @@ my_qlabel.o: my_qlabel.cpp my_qlabel.h
 dc_motor.o: dc_motor.cpp dc_motor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dc_motor.o dc_motor.cpp
 
+cleanpaint.o: cleanpaint.cpp cleanpaint.h \
+		Motor.h \
+		ui_cleanpaint.h \
+		mainwindow.h \
+		chosen_colour.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o cleanpaint.o cleanpaint.cpp
+
 qrc_resources.o: qrc_resources.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_resources.o qrc_resources.cpp
 
@@ -511,8 +521,14 @@ moc_selectcolour.o: moc_selectcolour.cpp
 moc_paint.o: moc_paint.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_paint.o moc_paint.cpp
 
+moc_myThread.o: moc_myThread.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_myThread.o moc_myThread.cpp
+
 moc_my_qlabel.o: moc_my_qlabel.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_my_qlabel.o moc_my_qlabel.cpp
+
+moc_cleanpaint.o: moc_cleanpaint.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_cleanpaint.o moc_cleanpaint.cpp
 
 ####### Install
 

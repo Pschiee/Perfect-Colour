@@ -2,6 +2,7 @@
 #define CLEANPAINT_H
 
 #include <QDialog>
+#include "Motor.h"
 
 namespace Ui {
 class cleanpaint;
@@ -23,6 +24,7 @@ private slots:
 
 private:
     Ui::cleanpaint *ui;
+    Motor MotorClean;
 };
 
 #endif // CLEANPAINT_H

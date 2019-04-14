@@ -12,6 +12,8 @@
 #include "ui_paint.h"
 #include "dispense.h"
 #include <wiringPi.h>
+#include "myThread.h"
+#include <QDebug>
 
 
 paint::paint(QWidget *parent) :
@@ -81,31 +83,22 @@ void paint::on_start_clicked()
     QPalette p = ui ->text -> palette();
     p.setColor(QPalette::Base, colour);
     ui -> text -> setPalette(p);
-    double desired = 1.5;
+    double desired = 1;
     double cyan = 100 * (colour.cyan())/255;
     double magenta = 100 * (colour.magenta())/255;
     double yellow = 100 * (colour.yellow())/255;
     double black = 100 * (colour.black())/255;
 
-    dispense.init(cyan,magenta,yellow,black,desired);
+    dispense.init(cyan,magenta,yellow,black,desired); 
     delay(100);
-    qDebug("Dispensing white \n");
     dispense.dispense_colour(dispense.white); 
-    //delay(2000);
     ui->white->setChecked(true); 
-    qDebug("Dispensing cyan \n");
     dispense.dispense_colour(dispense.cyan);
-    //delay(2000);
     ui->cyan->setChecked(true);
-    qDebug("Dispensing magenta \n");
     dispense.dispense_colour(dispense.magenta);
-    //delay(2000);
     ui->magenta->setChecked(true);
-    qDebug("Dispensing yellow \n");
     dispense.dispense_colour(dispense.yellow);
-   // delay(2000);
     ui->yellow->setChecked(true);
-    qDebug("Dispensing black \n");
     dispense.dispense_colour(dispense.black);
     ui->black->setChecked(true); 
 }	

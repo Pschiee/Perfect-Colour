@@ -7,6 +7,10 @@
  * @copyright Copyright (c) 2019
  *
  */
+#pragma once
+
+#ifndef MOTOR_H
+#define MOTOR_H
 
 #include <wiringPi.h>
 
@@ -68,3 +72,4 @@ private:
 	   */
 	void step4();
 };
+#endif 

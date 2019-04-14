@@ -8,8 +8,10 @@
  *
  */
 
-#include "includes.h"
 #include <stdio.h>
+#include <QDebug>
+#include <wiringPi.h>
+#include "dispense.h"
 
 using namespace std;
 
@@ -32,8 +34,7 @@ void dispense::init(double c, double m, double y, double b, double desired) {
 
   DC.init();
   Weight.init();
-  Motor1.init(0, 1, 2, 3, 4, 5, 15);
-  //NEED TO CHECK THIS IN REAL LIFE
+  Motor1.init(0, 1, 2, 3, 4, 5, 30);
   if (c > 0) {
     cyan = total * c * (c / 100);
     w1 = total * c*(1 - (c / 100));
@@ -70,28 +71,28 @@ void dispense::dispense_colour(double colour) {
   int i = 0;
   Clock::time_point t0= Clock::now();	
   float initial = Weight.get_initial();
-  cout << "Initial weight: "<< initial << "\n" <<flush;
+  qDebug() << "Initial weight: "<< initial << "\n" <<flush;
   sum = Weight.getWeight();
   float difference = 0;
-  DC.forward();
+   DC.forward();
 	while (difference < colour) {
 		previous_difference = difference;
 		sum = Weight.getWeight();
 		current_difference = sum-initial;
 		if (current_difference - previous_difference < 1) {
-			cout << "Desired difference: " << colour << "           " << flush;
+			qDebug() << "Desired difference: " << colour << "           " << flush;
 			difference = current_difference; 
-			cout << "Actual Difference: " << difference << "\n" << flush;
+			qDebug() << "Actual Difference: " << difference << "\n" << flush;
 	}
 		
     }
-    cout << "\n\n\nFinal difference: " << difference << "\n\n\n" << flush;
+    qDebug() << "\n\n\nFinal difference: " << difference << "\n\n\n" << flush;
   Clock::time_point t1 = Clock::now();
   milliseconds ms = std::chrono::duration_cast<milliseconds>(t1-t0);
   DC.backward();
   delay(ms.count()); 
   DC.stop();
   Motor1.rotate();
-  delay(100);
+  delay(100); 
 }
 

@@ -7,9 +7,10 @@
 * @copyright Copyright (c) 2019
 *
 */
-
-#include "includes.h"
+#include "weight.h"
+#include <cmath>
 #include <stdio.h>
+#include <QDebug>
 
 using namespace std;
 
@@ -28,7 +29,7 @@ float weight::get_initial() {
 		current_weight = HX7111.get_units();
 		while (fabs(current_weight) > previous_weight + 1) {
 			current_weight = HX7111.get_units(); 
-			cout << "Current Weight: " << current_weight << "\n" << flush; }
+			qDebug() << "Current Weight: " << current_weight << "\n" << flush; }
 		previous_weight = current_weight;
 		return current_weight;
 }
@@ -36,7 +37,7 @@ float weight::get_initial() {
 float weight::getWeight() {
 	float sum = 0;
 	int i = 0;
-	//previous_weight = HX7111.get_units();
+	previous_weight = HX7111.get_units();
 	
 	float difference = fabs(current_weight)-fabs(previous_weight);
 	while(1) {

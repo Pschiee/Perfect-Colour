@@ -24,13 +24,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += qt warn_on_debug
 
-SOURCES += main.cpp mainwindow.cpp selectcolour.cpp weight.cpp paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp my_qlabel.cpp dc_motor.cpp
+SOURCES += main.cpp mainwindow.cpp myThread.cpp selectcolour.cpp weight.cpp paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp my_qlabel.cpp dc_motor.cpp cleanpaint.cpp
 
-HEADERS += mainwindow.h selectcolour.h paint.h Motor.h dispense.h chosen_colour.h HX711.h my_qlabel.h \
-    includes.h dc_motor.h weight.h \
+HEADERS += mainwindow.h selectcolour.h paint.h myThread.h Motor.h dispense.h chosen_colour.h HX711.h my_qlabel.h cleanpaint.h \
+    dc_motor.h weight.h \
     dc_motor.h
 
-FORMS += mainwindow.ui selectcolour.ui paint.ui
+FORMS += mainwindow.ui selectcolour.ui paint.ui cleanpaint.ui
     
 
 # Default rules for deployment.

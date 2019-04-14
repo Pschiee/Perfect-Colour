@@ -1,3 +1,4 @@
+#pragma once
 #ifndef DISPENSE_H
 #define DISPENSE_H
 

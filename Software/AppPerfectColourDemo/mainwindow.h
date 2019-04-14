@@ -13,7 +13,6 @@
 
 #include <QMainWindow>
 #include "chosen_colour.h"
-#include "includes.h"
 
 
 namespace Ui {
@@ -51,7 +50,6 @@ public:
         return colour;
     }
     QColor selected_Colour; ///< Creates new QColor object
-    Motor Motor1; ///< Creates new Motor object
 
 public slots:
 
@@ -81,11 +79,17 @@ private slots:
   * @brief Pushbutton which closes the app
   */
     void on_pushButton_5_clicked();
+    
+    void on_pushButton_6_clicked();
 
     /**
   * @brief Pushbutton which clears the selected colour
   */
     void on_pushButton_clicked();
+    
+     void on_actionApp_Help_triggered();
+
+    void on_actionAbout_triggered();
 
 private:
     Ui::MainWindow *ui;

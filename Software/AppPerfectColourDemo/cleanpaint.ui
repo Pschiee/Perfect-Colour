@@ -27,7 +27,7 @@
       <string notr="true">color: rgb(0, 0, 255);</string>
      </property>
      <property name="text">
-      <string>Please Select Which Colour You Would Like to Clean or Refil</string>
+      <string>Please Select Which Colour You Would Like to Clean or Refill</string>
      </property>
     </widget>
    </item>

@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef WEIGHT_H
 #define WEIGHT_H
 

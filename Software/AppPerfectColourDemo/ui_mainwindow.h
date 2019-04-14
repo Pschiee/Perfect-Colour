@@ -32,6 +32,8 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionApp_Help;
+    QAction *actionAbout;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QVBoxLayout *verticalLayout_2;
@@ -46,6 +48,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_6;
     QPushButton *pushButton_5;
     QMenuBar *menuBar;
     QMenu *menuHelp;
@@ -55,8 +58,13 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(300, 150);
+        MainWindow->resize(834, 529);
+        MainWindow->setMaximumSize(QSize(834, 800));
         MainWindow->setStyleSheet(QStringLiteral(""));
+        actionApp_Help = new QAction(MainWindow);
+        actionApp_Help->setObjectName(QStringLiteral("actionApp_Help"));
+        actionAbout = new QAction(MainWindow);
+        actionAbout->setObjectName(QStringLiteral("actionAbout"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -170,6 +178,16 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
+        pushButton_6 = new QPushButton(centralWidget);
+        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+        sizePolicy1.setHeightForWidth(pushButton_6->sizePolicy().hasHeightForWidth());
+        pushButton_6->setSizePolicy(sizePolicy1);
+        pushButton_6->setFont(font1);
+        pushButton_6->setStyleSheet(QLatin1String("color: rgb(0, 0, 255);\n"
+"background-color: rgb(255, 230, 255);"));
+
+        verticalLayout->addWidget(pushButton_6);
+
         pushButton_5 = new QPushButton(centralWidget);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
         sizePolicy1.setHeightForWidth(pushButton_5->sizePolicy().hasHeightForWidth());
@@ -189,7 +207,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 828, 17));
+        menuBar->setGeometry(QRect(0, 0, 834, 17));
         menuHelp = new QMenu(menuBar);
         menuHelp->setObjectName(QStringLiteral("menuHelp"));
         MainWindow->setMenuBar(menuBar);
@@ -198,6 +216,9 @@ public:
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
 
         menuBar->addAction(menuHelp->menuAction());
+        menuHelp->addAction(actionApp_Help);
+        menuHelp->addSeparator();
+        menuHelp->addAction(actionAbout);
 
         retranslateUi(MainWindow);
 
@@ -207,11 +228,14 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        actionApp_Help->setText(QApplication::translate("MainWindow", "App Help", Q_NULLPTR));
+        actionAbout->setText(QApplication::translate("MainWindow", "About", Q_NULLPTR));
         label_logo->setText(QApplication::translate("MainWindow", "Display Image", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("MainWindow", "Open Colour Window", Q_NULLPTR));
         pushButton_4->setText(QApplication::translate("MainWindow", "Browse", Q_NULLPTR));
         pushButton->setText(QApplication::translate("MainWindow", "Clear", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("MainWindow", "Mix", Q_NULLPTR));
+        pushButton_6->setText(QApplication::translate("MainWindow", "Clean/Refill Syringes", Q_NULLPTR));
         pushButton_5->setText(QApplication::translate("MainWindow", "Close App", Q_NULLPTR));
         menuHelp->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
     } // retranslateUi

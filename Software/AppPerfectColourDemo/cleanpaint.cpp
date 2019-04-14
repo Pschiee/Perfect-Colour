@@ -9,6 +9,8 @@ cleanpaint::cleanpaint(QWidget *parent) :
     ui(new Ui::cleanpaint)
 {
     ui->setupUi(this);
+    wiringPiSetup();
+    MotorClean.init(0, 1, 2, 3, 4, 5, 30);
     // this->setWindowState(Qt::WindowFullScreen);
 }
 
@@ -26,23 +28,35 @@ void cleanpaint::on_pushButton_2_clicked()
 void cleanpaint::on_pushButton_clicked()
 {
     if (ui->radioButton_white->isChecked()){
-        QMessageBox::information(this,"Cleaning in progress...", "Clean white paint syringe");
-        // CLEAN CODE FOR WHITE
+        for (int j = 0; j<2;j++) {
+			MotorClean.rotate(); }
+			QMessageBox::information(this,"Cleaning in progress...", "Clean white paint syringe");
+			for (int j = 0; j<3;j++) {
+			MotorClean.rotate(); }
     }
     if (ui->radioButton_cyan->isChecked()){
+		for (int j = 0; j<3;j++) {
+			MotorClean.rotate(); }
         QMessageBox::information(this,"Cleaning in progress...", "Clean cyan paint syringe");
-        // CLEAN CODE FOR CYAN
+        for (int j = 0; j<2;j++) {
+			MotorClean.rotate(); }
     }
     if (ui->radioButton_magenta->isChecked()){
+		for (int j = 0; j<4;j++) {
+			MotorClean.rotate(); }
         QMessageBox::information(this,"Cleaning in progress...", "Clean magenta paint syringe");
-        // CLEAN CODE FOR MAGENTA
+        for (int j = 0; j<1;j++) {
+			MotorClean.rotate(); }
     }
     if (ui->radioButton_yellow->isChecked()){
         QMessageBox::information(this,"Cleaning in progress...", "Clean yellow paint syringe");
-        // CLEAN CODE FOR YELLOW
+        
     }
     if (ui->radioButton_black->isChecked()){
+		for (int j = 0; j<1;j++) {
+			MotorClean.rotate(); }
         QMessageBox::information(this,"Cleaning in progress...", "Clean black paint syringe");
-        // CLEAN CODE FOR BLACK
+        for (int j = 0; j<4;j++) {
+			MotorClean.rotate(); }
     }
 }
