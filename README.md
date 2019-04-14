@@ -55,7 +55,7 @@ Through the use of the GUI, you can select the colour using two different method
 <a name="1. How to get started"/>
 
 <project URL#<header name>
-<Perfect-Colour https://github.com/Pschiee/Perfect-Colour#1-how-to-get-started#<how to get started>
+<https://github.com/Pschiee/Perfect-Colour#1-how-to-get-started#<how to get started>
 
 
 ## How to get started
