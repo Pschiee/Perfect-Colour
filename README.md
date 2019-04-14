@@ -33,38 +33,27 @@ Welcome to the Github for Perfect Colour - The paint system to automatically dis
 
 Through the use of the GUI, you can select the colour using two different methods: by using the colour wheel or by selecting the colour you wish on an image which can then be made for you. 
 
-## Contents
-
-**1. How to get started**
-
-**2. Using the application**
-
-**3. Demonstration**
-
-**4. FAQs**
-
-**5. Further Information**
-
-**6. Credits**
 
 # Table of Contents
 1. [How to get started](#how-to-get-started)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
-
+2. [Using the application](#using-the-application)
+3. [Demonstrartion](#demonstration)
+4. [FAQs](#faqs)
+5. [Further Information](#further-information)
+6. [Credits](#credits)
 
 ## Example2
 ## Third Example
 
 
-## 1. How to get started
+## How to get started
 
 Once you own a Perfect Colour Machine, follow 3 simple steps:
 1. Obtain the 5 primary paints and load them to the machine
 2. Open our app
 3. Choose your colour and click "mix"
 
-## 2. Using the application
+## Using the application
 
 Very simple! Follow the following steps:
 1. Open the application on your PC
@@ -72,11 +61,11 @@ Very simple! Follow the following steps:
 3. Specify the quantity of paint you want
 4. Click mix and voila!
 
-## 3. Demonstration
+## Demonstration
 
 (link)
 
-## 4. FAQs
+## FAQs
 
 **- Is there a phone appliacation available?
 
@@ -94,7 +83,7 @@ Indeed. You can either choose it within a palette or even take a picture and sel
 
 Yes! CMYK plus white, when mixed correctly, should be able to produce any colour. 
 
-## 5. Further Information
+## Further Information
 
 For further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
 
@@ -105,7 +94,7 @@ Or visit our website <a href="https://enquiriesperfectco.wixsite.com/perfectcolo
 Can also check out our <a href="https://www.instagram.com/perfect_colour_paint/">instagram</a>.
 
 
-## 6. Credits
+## Credits
 
 <p align="right">
 
