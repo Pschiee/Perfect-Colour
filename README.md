@@ -52,7 +52,7 @@ Through the use of the GUI, you can select the colour using two different method
 2. [Example2](#example2)
 3. [Third Example](#third-example)
 
-## How to get started
+
 ## Example2
 ## Third Example
 
