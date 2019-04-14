@@ -48,7 +48,7 @@ Through the use of the GUI, you can select the colour using two different method
 **6. Credits**
 
 # Table of Contents
-1. [1. How to get started](#1.-how-to-get-started)
+1. [How to get started](#how-to-get-started)
 2. [Example2](#example2)
 3. [Third Example](#third-example)
 
