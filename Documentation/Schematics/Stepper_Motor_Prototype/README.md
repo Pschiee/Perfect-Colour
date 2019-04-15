@@ -8,6 +8,8 @@ It features the following:
 
 - Connections: one 4-pin and five 2-pin MOLEX connectors.
 
+- Diodes: eight through hole diodes (for the two H-bridge rectifiers).
+
 **File names with description:**
 
 - stepper_motor_schematic_prototype.opj: features the full project file.
