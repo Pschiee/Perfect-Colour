@@ -1,1 +1,1 @@
-Pass Conditions - Within 50ms of the expected rotation time
+Pass Condition - Within 50 ms of the expected rotation time
