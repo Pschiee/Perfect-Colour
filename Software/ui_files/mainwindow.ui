@@ -241,7 +241,7 @@ background-color: rgb(255, 230, 255);</string>
 background-color: rgb(255, 230, 255);</string>
           </property>
           <property name="text">
-           <string>Clean/Refill Syringes</string>
+           <string>Clean/Refil Syringes</string>
           </property>
          </widget>
         </item>

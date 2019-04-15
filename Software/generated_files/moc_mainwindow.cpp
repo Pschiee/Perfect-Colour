@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[13];
-    char stringdata0[227];
+    QByteArrayData data[14];
+    char stringdata0[234];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,18 +33,19 @@ QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 4), // "sent"
 QT_MOC_LITERAL(2, 16, 0), // ""
 QT_MOC_LITERAL(3, 17, 6), // "Colour"
-QT_MOC_LITERAL(4, 24, 7), // "receive"
-QT_MOC_LITERAL(5, 32, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(6, 56, 23), // "on_pushButton_3_clicked"
-QT_MOC_LITERAL(7, 80, 23), // "on_pushButton_4_clicked"
-QT_MOC_LITERAL(8, 104, 23), // "on_pushButton_5_clicked"
-QT_MOC_LITERAL(9, 128, 23), // "on_pushButton_6_clicked"
-QT_MOC_LITERAL(10, 152, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(11, 174, 27), // "on_actionApp_Help_triggered"
-QT_MOC_LITERAL(12, 202, 24) // "on_actionAbout_triggered"
+QT_MOC_LITERAL(4, 24, 6), // "amount"
+QT_MOC_LITERAL(5, 31, 7), // "receive"
+QT_MOC_LITERAL(6, 39, 23), // "on_pushButton_2_clicked"
+QT_MOC_LITERAL(7, 63, 23), // "on_pushButton_3_clicked"
+QT_MOC_LITERAL(8, 87, 23), // "on_pushButton_4_clicked"
+QT_MOC_LITERAL(9, 111, 23), // "on_pushButton_5_clicked"
+QT_MOC_LITERAL(10, 135, 23), // "on_pushButton_6_clicked"
+QT_MOC_LITERAL(11, 159, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(12, 181, 27), // "on_actionApp_Help_triggered"
+QT_MOC_LITERAL(13, 209, 24) // "on_actionAbout_triggered"
 
     },
-    "MainWindow\0sent\0\0Colour\0receive\0"
+    "MainWindow\0sent\0\0Colour\0amount\0receive\0"
     "on_pushButton_2_clicked\0on_pushButton_3_clicked\0"
     "on_pushButton_4_clicked\0on_pushButton_5_clicked\0"
     "on_pushButton_6_clicked\0on_pushButton_clicked\0"
@@ -67,21 +68,21 @@ static const uint qt_meta_data_MainWindow[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   64,    2, 0x06 /* Public */,
+       1,    2,   64,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    1,   67,    2, 0x0a /* Public */,
-       5,    0,   70,    2, 0x08 /* Private */,
-       6,    0,   71,    2, 0x08 /* Private */,
-       7,    0,   72,    2, 0x08 /* Private */,
-       8,    0,   73,    2, 0x08 /* Private */,
-       9,    0,   74,    2, 0x08 /* Private */,
-      10,    0,   75,    2, 0x08 /* Private */,
-      11,    0,   76,    2, 0x08 /* Private */,
-      12,    0,   77,    2, 0x08 /* Private */,
+       5,    1,   69,    2, 0x0a /* Public */,
+       6,    0,   72,    2, 0x08 /* Private */,
+       7,    0,   73,    2, 0x08 /* Private */,
+       8,    0,   74,    2, 0x08 /* Private */,
+       9,    0,   75,    2, 0x08 /* Private */,
+      10,    0,   76,    2, 0x08 /* Private */,
+      11,    0,   77,    2, 0x08 /* Private */,
+      12,    0,   78,    2, 0x08 /* Private */,
+      13,    0,   79,    2, 0x08 /* Private */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QColor,    3,
+    QMetaType::Void, QMetaType::QColor, QMetaType::Double,    3,    4,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QColor,    2,
@@ -103,7 +104,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->sent((*reinterpret_cast< QColor(*)>(_a[1]))); break;
+        case 0: _t->sent((*reinterpret_cast< QColor(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
         case 1: _t->receive((*reinterpret_cast< QColor(*)>(_a[1]))); break;
         case 2: _t->on_pushButton_2_clicked(); break;
         case 3: _t->on_pushButton_3_clicked(); break;
@@ -119,7 +120,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (MainWindow::*_t)(QColor );
+            typedef void (MainWindow::*_t)(QColor , double );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MainWindow::sent)) {
                 *result = 0;
                 return;
@@ -165,9 +166,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void MainWindow::sent(QColor _t1)
+void MainWindow::sent(QColor _t1, double _t2)
 {
-    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

@@ -37,7 +37,7 @@ public slots:
   /**
     * @brief Receives colour from the mainwindow and sets the colour to paint to be this.
     */
-    void received(QColor);
+    void received(QColor,double);
 
 private slots:
 
