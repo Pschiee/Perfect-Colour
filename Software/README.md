@@ -8,3 +8,6 @@ To run:
 
 `./AppPerfectColour`
 
+The folder test contains the unit tests that were created for the weight sensor, stepper motor and colour calculations. 
+
+
