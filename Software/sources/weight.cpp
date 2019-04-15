@@ -21,8 +21,8 @@ weight::weight() {}
 void weight::init() {
 
 HX7111.setup(21, 22);
-HX7111.set_scale(5517);
-HX7111.set_offset(8451701);
+HX7111.set_scale(554.736);
+HX7111.set_offset(8452100);
 
 }
 

@@ -1,0 +1,3 @@
+/home/pi/Perfect-Colour/Software/test/paint/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Perfect-Colour/Software/test/paint/build/CMakeFiles/edit_cache.dir
+/home/pi/Perfect-Colour/Software/test/paint/build/CMakeFiles/Test_paint.dir

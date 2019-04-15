@@ -38,7 +38,6 @@ class myThread : public CppThread {
 			colour = _colour;
 			maximum = _maximum + 1;
 			
-			
 		}
 	private:
     /**

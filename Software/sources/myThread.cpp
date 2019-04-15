@@ -32,12 +32,12 @@ void myThread::run() {
 		if (current_difference - previous_difference < 1) {
 			difference = current_difference; 
 	}
-		
-    }
+    
   Clock::time_point t1 = Clock::now();
   milliseconds ms = std::chrono::duration_cast<milliseconds>(t1-t0);
   DC.backward();
   delay(ms.count()); 
   DC.stop();
   Motor1.rotate();
+	}
 }

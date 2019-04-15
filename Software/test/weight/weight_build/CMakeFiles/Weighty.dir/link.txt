@@ -1,0 +1,2 @@
+/usr/bin/ar qc libWeighty.a  CMakeFiles/Weighty.dir/weight.cpp.o
+/usr/bin/ranlib libWeighty.a

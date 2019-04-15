@@ -16,8 +16,6 @@
 #include <QDebug>
 
 
-
-
 paint::paint(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::paint)
@@ -88,7 +86,7 @@ void paint::on_start_clicked()
     ui -> text -> setPalette(p); 
     ui->text->setText("Now dispensing: White");
     
-    wiringPiSetup();
+    wiringPiSetup(); //Set up wiringPi
 
     c = 100 * (colour.cyan())/255; // Cyan required in percentage
     m = 100 * (colour.magenta())/255; // Magenta required in percentage
@@ -119,31 +117,31 @@ void paint::on_start_clicked()
       w4 = total * b*(1 - (b / 100)); // Weight of white required from black
     }
     white = w1 + w2 + w3 + w4;
-    myThread dispense_white(white,maximum);
-    maximum += white;
-    myThread dispense_cyan(cyan,maximum);
-    maximum += cyan;
-    myThread dispense_magenta(magenta,maximum);
-    maximum += magenta;
-    myThread dispense_yellow(yellow,maximum);
-    maximum += yellow;
-    myThread dispense_black(black,maximum);
-    maximum += black;
-    ui->white->setChecked(true); 
-    dispense_white.start();
-    dispense_white.join();
-    ui->cyan->setChecked(true);
-    dispense_cyan.start();
-    dispense_cyan.join();
-    ui->magenta->setChecked(true);
-    dispense_magenta.start();
-    dispense_magenta.join();
-    ui->yellow->setChecked(true);
-    dispense_yellow.start();
-    dispense_yellow.join();
+    myThread dispense_white(white,maximum); // Create a  thread for dispensing white paint. 
+    maximum += white; // Increase the allowed maximum starting weight
+    myThread dispense_cyan(cyan,maximum); // Create a  thread for dispensing cyan paint. 
+    maximum += cyan; // Increase the allowed maximum starting weight
+    myThread dispense_magenta(magenta,maximum); // Create a  thread for dispensing magenta paint. 
+    maximum += magenta; // Increase the allowed maximum starting weight
+    myThread dispense_yellow(yellow,maximum); // Create a  thread for dispensing yellow paint. 
+    maximum += yellow; // Increase the allowed maximum starting weight
+    myThread dispense_black(black,maximum); // Create a  thread for dispensing black paint. 
+    maximum += black; // Increase the allowed maximum starting weight
+    ui->white->setChecked(true); // Tick the white checkbox
+    dispense_white.start(); // Start the white paint dispense thread
+    dispense_white.join(); // Keep the white paint dispense thread until it is finished
+    ui->cyan->setChecked(true); // Tick the cyan checkbox
+    dispense_cyan.start(); // Start the cyan paint dispense thread
+    dispense_cyan.join(); // Keep the white paint dispense thread until it is finished
+    ui->magenta->setChecked(true); // Tick the magenta checkbox
+    dispense_magenta.start(); // Start the magenta paint dispense thread
+    dispense_magenta.join(); // Keep the white paint dispense thread until it is finished
+    ui->yellow->setChecked(true); // Tick the yellow checkbox
+    dispense_yellow.start(); // Start the yellow paint dispense thread
+    dispense_yellow.join(); // Keep the white paint dispense thread until it is finished
+    ui->black->setChecked(true); // Tick the black checkbox
+    dispense_black.start(); // Start the black paint dispense thread
+    dispense_black.join(); // Keep the white paint dispense thread until it is finished
     ui->black->setChecked(true);
-    dispense_black.start();
-    dispense_black.join();
-    ui->black->setChecked(true);
-    ui->progressBar->setValue(100);
+    ui->progressBar->setValue(100); // Set the progress bar to 100%
 }
