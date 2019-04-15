@@ -45,7 +45,7 @@ Through the use of the GUI, you can select the colour using two different method
 
 ## Installation
 
-On the terminal type the following:
+On the terminal of a Raspberry Pi type the following:
 
 `git clone https://github.com/Pschiee/Perfect-Colour.git`
 
@@ -80,8 +80,6 @@ Very simple! Follow the following steps:
 
 - First Paint Test
 
-- Second Paint Test
-
 ## FAQs
 
 **- Is there a phone appliacation available?
@@ -90,15 +88,15 @@ There is no applications available for phones or tablets at the moment. However,
 
 **- Can other types of paints be used?**
 
-The machine is designed to produce colours with acrylic. The accuracy might vary with the quality and types of paint used. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
+The machine is designed to produce colours from five colours of acrylic paints. The accuracy might vary with the quality and types of paint used. However, this can be addressed through calibration. Other paints like oil could obtain similar colours, however, due to the design of the machine, the results would not be the same.
 
 **- Can I choose the exact colour I want?**
 
-Indeed. You can either choose it within a palette or even take a picture and select the exact pixel (colour) you want in it.
+Indeed. You can either choose it within a palette or even take a picture and select the exact a colour from the desired pixel.
 
 **- Can any colour be produced?**
 
-Yes! CMYK plus white, when mixed correctly, should be able to produce any colour. 
+Yes! CMYK plus white, when mixed correctly, can produce any colour. 
 
 ## Further Information
 
@@ -106,7 +104,7 @@ For further information please visit our <a href="https://github.com/Pschiee/Per
 
 For software documentation please click <a href="https://pschiee.github.io/Perfect-Colour/">here</a>. 
 
-Or visit our website <a href="https://enquiriesperfectco.wixsite.com/perfectcolour">website</a>.
+Or visit our <a href="https://enquiriesperfectco.wixsite.com/perfectcolour">website</a>.
 
 Can also check out our <a href="https://www.instagram.com/perfect_colour_paint/">instagram</a>.
 
