@@ -1,0 +1,164 @@
+(ExpressProject "Design1"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library1.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library1.olb"))
+      (File "..\..\pnp_transistor.olb"
+        (Type "Schematic Library")
+        (DisplayName "..\..\pnp_transistor.olb"))
+      (File ".\library2.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library2.olb"))
+      (File ".\library3.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library3.olb"))
+      (File ".\library4.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library4.olb"))
+      (File ".\library5.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library5.olb"))
+      (File ".\library6.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\library6.olb")))
+    (NoModify)
+    (File ".\raspberry_pi_shield.dsn"
+      (Type "Schematic Design")
+      (DisplayName ".\raspberry_pi_shield.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "D:\PCB for real time\Pi_PCB\Design\allegro")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "FALSE")
+    ("Allegro Netlist Output Board File" "allegro\DESIGN1.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE"))
+  (Folder "Outputs"
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (L298
+      (FullPartName "L298.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PI_PCB\DESIGN\LIBRARY2.OLB")
+      (DeviceIndex "0"))
+    (D_1N5814
+      (FullPartName "D_1N5814.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PI_PCB\DESIGN\LIBRARY5.OLB")
+      (DeviceIndex "0"))
+    (Cap_e
+      (FullPartName "Cap_e.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PI_PCB\DESIGN\LIBRARY4.OLB")
+      (DeviceIndex "0"))
+    (100nF_Capacitor
+      (FullPartName "100nF_Capacitor.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\100NF_CAPACITOR.OLB")
+      (DeviceIndex "0"))
+    ("8K2_ Resistor"
+      (FullPartName "8K2_ Resistor.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\8K2_RESISTOR.OLB")
+      (DeviceIndex "0"))
+    (1uF_Capacitor
+      (FullPartName "1uF_Capacitor.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\1UF_CAPACITOR.OLB")
+      (DeviceIndex "0"))
+    (PNP_Transistor
+      (FullPartName "PNP_Transistor.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PNP_TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (HX711
+      (FullPartName "HX711.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\HX711.OLB")
+      (DeviceIndex "0"))
+    (10K_Resistor
+      (FullPartName "10K_Resistor.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\10K_RESISTOR.OLB")
+      (DeviceIndex "0"))
+    (R1K
+      (FullPartName "R1K.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PI_PCB\DESIGN\LIBRARY3.OLB")
+      (DeviceIndex "0"))
+    (connector2
+      (FullPartName "connector2.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PI_PCB\DESIGN\LIBRARY6.OLB")
+      (DeviceIndex "0"))
+    ("Pi Header"
+      (FullPartName "Pi Header.Normal")
+      (LibraryName "D:\PCB FOR REAL TIME\PI_PCB\DESIGN\LIBRARY1.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "2141838i")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\raspberry_pi_shield.dsn")
+      (Path "Design Resources" ".\raspberry_pi_shield.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\raspberry_pi_shield.dsn" "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" ".\library1.olb")
+      (Path "Design Resources" "Library" "..\..\pnp_transistor.olb")
+      (Path "Design Resources" "Library" ".\library2.olb")
+      (Path "Design Resources" "Library" ".\library3.olb")
+      (Path "Design Resources" "Library" ".\library4.olb")
+      (Path "Design Resources" "Library" ".\library5.olb")
+      (Path "Design Resources" "Library" ".\library6.olb")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 429"))
+      (Tab 0))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1736 130 598"))
+      (Path "d:\pcb for real time\github\pi_shield_schematic\library6.olb")
+      (Package "CONNECTOR2")
+      (PartType "1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 52 1680 52 542"))
+      (Path "d:\pcb for real time\github\pi_shield_schematic\library2.olb")
+      (Package "L298")
+      (PartType "1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1658 52 520")
+        (Scroll "-248 0")
+        (Zoom "33")
+        (Occurrence "/"))
+      (Path
+         "D:\PCB FOR REAL TIME\GITHUB\PI_SHIELD_SCHEMATIC\RASPBERRY_PI_SHIELD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 26 919 26 210"))
+      (Path "d:\pcb for real time\github\pi_shield_schematic\library5.olb")
+      (Package "D_1N5814")
+      (PartType "1")))
+  (ISPCBBASICLICENSE "false")
+  (LastUsedLibraryBrowseDirectory "D:\PCB for real time\Pi_PCB\Design"))
