@@ -82,7 +82,7 @@ Very simple! Follow the following steps:
 
 ## FAQs
 
-**- Is there a phone appliacation available?
+**- Is there a phone appliacation available?**
 
 There is no applications available for phones or tablets at the moment. However, we do consider this for a future development.
 
