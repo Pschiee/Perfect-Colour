@@ -62,16 +62,16 @@ static const uint qt_meta_data_paint[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   49,    2, 0x0a /* Public */,
-       3,    1,   52,    2, 0x08 /* Private */,
-       5,    1,   55,    2, 0x08 /* Private */,
-       6,    1,   58,    2, 0x08 /* Private */,
-       7,    1,   61,    2, 0x08 /* Private */,
-       8,    1,   64,    2, 0x08 /* Private */,
-       9,    0,   67,    2, 0x08 /* Private */,
+       1,    2,   49,    2, 0x0a /* Public */,
+       3,    1,   54,    2, 0x08 /* Private */,
+       5,    1,   57,    2, 0x08 /* Private */,
+       6,    1,   60,    2, 0x08 /* Private */,
+       7,    1,   63,    2, 0x08 /* Private */,
+       8,    1,   66,    2, 0x08 /* Private */,
+       9,    0,   69,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QColor,    2,
+    QMetaType::Void, QMetaType::QColor, QMetaType::Double,    2,    2,
     QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void, QMetaType::Int,    4,
@@ -88,7 +88,7 @@ void paint::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         paint *_t = static_cast<paint *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->received((*reinterpret_cast< QColor(*)>(_a[1]))); break;
+        case 0: _t->received((*reinterpret_cast< QColor(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
         case 1: _t->on_white_stateChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 2: _t->on_cyan_stateChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 3: _t->on_magenta_stateChanged((*reinterpret_cast< int(*)>(_a[1]))); break;

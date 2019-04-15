@@ -21,6 +21,7 @@
 #include <QFile>
 #include <QImage>
 #include <QMessageBox>
+#include <QInputDialog>
 
 #include <wiringPi.h>
 
@@ -30,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {   
     ui->setupUi(this);
 
-    QMainWindow::showMaximized();
+    QMainWindow::showFullScreen();
     QPixmap pic(":/img/img/Perfect_Colour_Logo_02.png");
     int w=ui->label_logo->width();
     int h=ui->label_logo->height();
@@ -48,12 +49,15 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+	bool ok = 0;
+	amount = QInputDialog::getDouble(this, "Amount", "Amount Selected",0,0,10,2,&ok); 
+	if (ok == 1) {
     QColor color = chosenColour.get_colour();
-	  paint paint;
-    connect(this,SIGNAL(sent(QColor)), &paint, SLOT(received(QColor)));
-    emit sent(color);
+	paint paint;
+    connect(this,SIGNAL(sent(QColor,double)), &paint, SLOT(received(QColor,double)));
+    emit sent(color,amount);
     paint.setModal(true);
-    paint.exec(); 
+    paint.exec(); }
 }
 
 void MainWindow::on_pushButton_3_clicked()

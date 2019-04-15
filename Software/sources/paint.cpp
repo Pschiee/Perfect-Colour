@@ -1,5 +1,5 @@
 /**
- * @file pain.cpp
+ * @file paint.cpp
  * @author Callum Mason + Silviya Ivanova
  * @brief The status window while paint is being dispensed
  * @date 2019-04-12
@@ -70,8 +70,8 @@ void paint::on_black_stateChanged(int arg1)
     }
 }
 
-void paint::received(QColor color) {
-
+void paint::received(QColor color, double amount) {
+	desired = amount;
     QColor colour = color;
     chosenColour.set_colour(colour);
     QPalette p = ui ->text -> palette();
@@ -105,7 +105,7 @@ void paint::on_start_clicked()
     w1 = total * c*(1 - (c / 100));
   }
   if (m > 0) {
-    double magenta = total * m * (m / 100);
+    magenta = total * m * (m / 100);
     w2 = total * m*(1 - (m / 100));
   }
   if (y > 0) {
@@ -116,7 +116,6 @@ void paint::on_start_clicked()
     black = total * b * (b / 100);
     w4 = total * b*(1 - (b / 100));
   }
-
   white = w1 + w2 + w3 + w4;
   myThread dispense_white(white,maximum);
   maximum += white;

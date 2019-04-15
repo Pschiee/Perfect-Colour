@@ -12,6 +12,9 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
+ /**
+ * @brief The class Motor provides the functionality to rotate the paints to the appropriate position
+*/
 class Motor {
 
 public:

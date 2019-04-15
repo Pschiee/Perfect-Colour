@@ -16,9 +16,15 @@
 
 
 namespace Ui {
+
+  /**
+* @brief The main window
+*/
 class MainWindow;
 }
-
+/**
+* @brief The main window
+*/
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -94,6 +100,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QColor colour;
+    double amount;
     chosen_colour chosenColour;
 
 signals:
@@ -103,7 +110,7 @@ signals:
   *
   * @param Colour A QColor object
   */
-    void sent(QColor Colour);
+    void sent(QColor Colour, double amount);
 };
 
 #endif // MAINWINDOW_H

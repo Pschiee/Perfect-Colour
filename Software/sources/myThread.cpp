@@ -1,3 +1,13 @@
+/**
+ * @file myThread.cpp
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
+ * @brief The thread which weighs the paint as it is being dispensed and controls the dc motor pushing.
+ * @date 2019-04-11
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "includes/myThread.h"
 
 #include <stdio.h>

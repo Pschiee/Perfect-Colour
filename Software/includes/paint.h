@@ -15,9 +15,14 @@
 #include <QDialog>
 
 namespace Ui {
+  /**
+ * @brief The class paint provides status of the current paint being dispensed.
+*/
 class paint;
 }
-
+/**
+* @brief The class paint provides status of the current paint being dispensed.
+*/
 class paint : public QDialog
 {
     Q_OBJECT
@@ -37,7 +42,7 @@ public slots:
   /**
     * @brief Receives colour from the mainwindow and sets the colour to paint to be this.
     */
-    void received(QColor);
+    void received(QColor,double);
 
 private slots:
 

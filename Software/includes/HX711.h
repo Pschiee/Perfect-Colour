@@ -12,6 +12,9 @@
 
 #include <stdint.h>
 
+ /**
+ * @brief The class HX711 provides the functionality to obtain the weight on the load cell.
+ */
 class HX711
 {
 private:
