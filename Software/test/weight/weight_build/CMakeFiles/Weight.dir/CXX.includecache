@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Perfect-Colour/Software/test/weight/HX711.h
+stdint.h
+-
+
+/home/pi/Perfect-Colour/Software/test/weight/test_weight.cpp
+weight.h
+/home/pi/Perfect-Colour/Software/test/weight/weight.h
+iostream
+-
+wiringPi.h
+-
+
+/home/pi/Perfect-Colour/Software/test/weight/weight.h
+HX711.h
+/home/pi/Perfect-Colour/Software/test/weight/HX711.h
+

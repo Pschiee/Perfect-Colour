@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Perfect-Colour/Software/test/motor/Motor.h
+
+/home/pi/Perfect-Colour/Software/test/motor/motor_test.cpp
+wiringPi.h
+-
+Motor.h
+/home/pi/Perfect-Colour/Software/test/motor/Motor.h
+chrono
+-
+iostream
+-
+

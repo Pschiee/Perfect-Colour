@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/Test_Motor.dir/motor_test.cpp.o  -o Test_Motor -rdynamic libMotor.a -lwiringPi 
