@@ -1,6 +1,7 @@
-The files in this folder contain the prototype electronic design created for the weight sensor used for the project.
+**The files in this folder contain the prototype electronic design created for the weight sensor used for the project.**
 
 It implements the following:
+
 - Chip: HX711.
 
 - Resistors: two 10kOhm, one 1kOhm and one 8.2kOhm.
