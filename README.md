@@ -79,9 +79,9 @@ For further information please visit the <a href="https://github.com/Pschiee/Per
 
 ## Demonstration
 
-<a href="https://www.youtube.com/watch?v=QNqFCe46agE" target="_blank"> Water Test
+<a href="https://www.youtube.com/watch?v=QNqFCe46agE" target="_blank"> Water Test </a>
 
-<a href="https://www.youtube.com/watch?v=BCwkkFHPxvM" target="_blank"> Paint Test
+<a href="https://www.youtube.com/watch?v=BCwkkFHPxvM" target="_blank"> Paint Test </a>
 
 ## FAQs
 
@@ -107,9 +107,7 @@ The machine will produce the colour you see, so it will depend on the lighting c
 
 ## Further Information
 
-For all further information please visit our:
-
-<a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
+For all further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
 
 For software documentation please click <a href="https://pschiee.github.io/Perfect-Colour/">here</a>. 
 
