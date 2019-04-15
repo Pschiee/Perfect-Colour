@@ -1,5 +1,5 @@
 /**
- * @file pain.cpp
+ * @file paint.cpp
  * @author Callum Mason + Silviya Ivanova
  * @brief The status window while paint is being dispensed
  * @date 2019-04-12

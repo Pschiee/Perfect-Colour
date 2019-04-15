@@ -22,9 +22,14 @@
 
 
 namespace Ui {
+  /**
+* @brief The class selectcolour provides the browse window allowing you to select colour from an image.
+*/
 class selectcolour;
 }
-
+/**
+* @brief The class selectcolour provides the browse window allowing you to select colour from an image.
+*/
 class selectcolour : public QDialog
 {
     Q_OBJECT

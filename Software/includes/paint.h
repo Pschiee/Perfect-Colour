@@ -15,9 +15,14 @@
 #include <QDialog>
 
 namespace Ui {
+  /**
+ * @brief The class paint provides status of the current paint being dispensed.
+*/
 class paint;
 }
-
+/**
+* @brief The class paint provides status of the current paint being dispensed.
+*/
 class paint : public QDialog
 {
     Q_OBJECT

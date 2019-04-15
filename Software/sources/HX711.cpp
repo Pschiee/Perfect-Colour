@@ -1,3 +1,13 @@
+/**
+ * @file HX711.cpp
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
+ * @brief The class HX711 provides the functionality to obtain the weight on the load cell.
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "includes/HX711.h"
 #include <wiringPi.h>
 
