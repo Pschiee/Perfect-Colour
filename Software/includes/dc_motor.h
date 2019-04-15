@@ -9,6 +9,9 @@
  *
  */
 
+ /**
+ * @brief The class DCMotor provides the functionality to drive the pusher which will push the syringe and dispense paint
+*/
 class DCMotor {
 
 public:

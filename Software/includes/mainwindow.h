@@ -16,9 +16,15 @@
 
 
 namespace Ui {
+
+  /**
+* @brief The main window
+*/
 class MainWindow;
 }
-
+/**
+* @brief The main window
+*/
 class MainWindow : public QMainWindow
 {
     Q_OBJECT

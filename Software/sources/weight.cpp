@@ -1,6 +1,6 @@
 /**
 * @file weight.cpp
-* @author Callum Mason + Silviya Ivanova
+* @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
 *  @briefThe class weight returns the current weight value
 * @date 2019-04-12
 *

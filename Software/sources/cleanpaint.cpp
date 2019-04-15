@@ -1,3 +1,13 @@
+/**
+ * @file cleanpaint.cpp
+ * @author Callum Mason + Silviya Ivanova + Leire Froufe Vigara
+ * @brief The window which is used for the clean and refill paint option.
+ * @date 2019-04-12
+ *
+ * @copyright Copyright (c) 2019
+ *
+ */
+
 #include "includes/cleanpaint.h"
 #include "ui_cleanpaint.h"
 #include "includes/mainwindow.h"
@@ -19,12 +29,16 @@ cleanpaint::~cleanpaint()
 {
     delete ui;
 }
-
+/*
+ Function to close the window.
+*/
 void cleanpaint::on_pushButton_2_clicked()
 {
     this->hide();
 }
-
+/**
+  Function which begins the cleaning program.
+*/
 void cleanpaint::on_pushButton_clicked()
 {
     if (ui->radioButton_white->isChecked()){

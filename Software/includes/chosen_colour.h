@@ -12,6 +12,9 @@
 #define CHOSEN_COLOUR_H
 #include <QColor>
 
+ /**
+ * @brief The class chosen_colour is used to store and access colour.
+*/
 class chosen_colour
 {
 public:

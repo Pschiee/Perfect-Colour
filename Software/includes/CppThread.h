@@ -1,3 +1,9 @@
+/**
+ * @file CppThread.h
+ * @author Bernd Porr
+ * @brief A C++ thread library
+ */
+
 #ifndef __CPP_THREAD_H_
 #define __CPP_THREAD_H_
 
@@ -18,7 +24,9 @@
 #endif
 
 
-// abstract thread which contains the inner workings of the thread model
+ /**
+ * @brief abstract thread which contains the inner workings of the thread model.
+ */
 class CppThread {
 
 private:
