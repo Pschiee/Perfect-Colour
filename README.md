@@ -35,13 +35,29 @@ Through the use of the GUI, you can select the colour using two different method
 
 
 # Table of Contents
-1. [How to get started](#how-to-get-started)
-2. [Using the application](#using-the-application)
-3. [Demonstrartion](#demonstration)
-4. [FAQs](#faqs)
-5. [Further Information](#further-information)
-6. [Credits](#credits)
+1. [Installation](#installation)
+2. [How to get started](#how-to-get-started)
+3. [Using the application](#using-the-application)
+4. [Demonstrartion](#demonstration)
+5. [FAQs](#faqs)
+6. [Further Information](#further-information)
+7. [Credits](#credits)
 
+## Installation
+
+On the terminal type the following:
+
+`git clone https://github.com/Pschiee/Perfect-Colour.git`
+
+`cd Software`
+
+`qmake`
+
+`make`
+
+`./AppPerfectColour`
+
+QT and wiringPi are required.
 
 ## How to get started
 
