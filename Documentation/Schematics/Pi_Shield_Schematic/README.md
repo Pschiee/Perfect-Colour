@@ -6,7 +6,7 @@ All components featured are surface mount apart from the terminal connectors thr
 
 - Resistors: two 10kOhm, one 1kOhm and one 8.2kOhm.
 
-- Transisotrs: two surface mount PNP.
+- Transisotr: a surface mount PNP.
 
 - Capacitors: three ceramic 1microFarad, five ceramic 100nanoFarad and four electrolytic 1microFarad.
 
