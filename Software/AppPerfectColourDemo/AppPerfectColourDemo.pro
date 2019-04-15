@@ -1,8 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2019-02-27T10:31:06
-#
-#-------------------------------------------------
 
 QT       += core gui
 
@@ -24,14 +19,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += qt warn_on_debug
 
-SOURCES += main.cpp mainwindow.cpp myThread.cpp selectcolour.cpp weight.cpp paint.cpp Motor.cpp dispense.cpp chosen_colour.cpp HX711.cpp my_qlabel.cpp dc_motor.cpp cleanpaint.cpp
+SOURCES += sources/main.cpp sources/mainwindow.cpp sources/selectcolour.cpp sources/myThread.cpp sources/weight.cpp sources/paint.cpp sources/Motor.cpp sources/chosen_colour.cpp sources/HX711.cpp sources/my_qlabel.cpp sources/dc_motor.cpp sources/cleanpaint.cpp
 
-HEADERS += mainwindow.h selectcolour.h paint.h myThread.h Motor.h dispense.h chosen_colour.h HX711.h my_qlabel.h cleanpaint.h \
-    dc_motor.h weight.h \
-    dc_motor.h
+HEADERS += includes/mainwindow.h includes/selectcolour.h includes/myThread.h includes/paint.h includes/Motor.h includes/chosen_colour.h includes/HX711.h includes/my_qlabel.h includes/cleanpaint.h \
+    includes/dc_motor.h includes/weight.h includes/CppThread.h \
+    includes/dc_motor.h
 
-FORMS += mainwindow.ui selectcolour.ui paint.ui cleanpaint.ui
-    
+FORMS += ui_files/mainwindow.ui ui_files/selectcolour.ui ui_files/paint.ui ui_files/cleanpaint.ui
+
+OBJECTS_DIR = bin
+MOC_DIR=generated_files
+UI_DIR = bin/.ui
+O_DIR = bin/.o
+#Debug:DESTDIR = bin
+#Debug:OBJECTS_DIR = bin/.obj
+#Debug:MOC_DIR = bin/.moc
+#Debug:RCC_DIR= bin/.rcc
+#Debug:UI_DIR = bin/.ui
+#Debug:O_DIR = bin/.o
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
