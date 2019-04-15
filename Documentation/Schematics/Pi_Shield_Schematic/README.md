@@ -10,6 +10,8 @@ All components featured are surface mount apart from the terminal connectors thr
 
 - Capacitors: three ceramic 1microFarad, five ceramic 100nanoFarad and four electrolytic 1microFarad.
 
+- Diodes: twelve 1N5814 surface mount diodes.
+
 - Connections: one 4-pin and two 2-pin terminal connectors.
 
 **File names with description:**
