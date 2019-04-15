@@ -1,4 +1,4 @@
-**This folder has the pdf files of the schematics created throughout this project."
+**This folder has the pdf files of the schematics created throughout this project.**
 
 These include:
 
