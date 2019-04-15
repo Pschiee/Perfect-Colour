@@ -66,6 +66,8 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 2. Open our app
 3. Choose your colour and click "mix"
 
+For further information please visit the <a href="https://github.com/Pschiee/Perfect-Colour/wiki/User-Manual">User Manual</a>.
+
 ## Using the application
 
 Very simple! Follow the following steps:
@@ -96,7 +98,11 @@ Indeed. You can either choose it within a palette or even take a picture and sel
 
 **- Can any colour be produced?**
 
-Yes! CMYK plus white, when mixed correctly, can produce any colour. 
+Yes! CMYK plus white, when mixed correctly, can produce any colour. However, bear in mind this is dependant on the paints you are using, as if you use very matte primary colours, you will not be able to produce a bright gold, so choose your primary CMYK carefully.
+
+**- Does the machine produce the colour I see or the real colour?**
+
+The machine will produce the colour you see, so it will depend on the lighting conditions you took the picture in. Bare in mind that if what you want is the real colour instead, you would have to balance the whites of the picture before uploading it.
 
 ## Further Information
 
