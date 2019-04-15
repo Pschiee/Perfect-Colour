@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/Weight.dir/main.cpp.o  -o Weight -rdynamic libHX711.a -lwiringPi 
