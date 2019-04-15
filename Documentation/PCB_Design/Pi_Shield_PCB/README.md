@@ -10,4 +10,4 @@ Files with description as follwos:
 
 <p align="left">
 	<img src="https://github.com/Pschiee/Perfect-Colour/blob/master/Documentation/PCB_Design/Pi_Shield_PCB/Raspberry_Pi_Shield.PNG" 
-	 title="Raspberry Pi Shield" width="600" height="450" ></a></p>
+	 title="Raspberry Pi Shield" width="600" height="500" ></a></p>
