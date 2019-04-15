@@ -106,10 +106,8 @@ Yes! CMYK plus white, when mixed correctly, can produce any colour. However, bea
 The machine will produce the colour you see, so it will depend on the lighting conditions you took the picture in. Bare in mind that if what you want is the real colour instead, you would have to balance the whites of the picture before uploading it.
 
 ## Further Information
-For further information please visit our 
 
-For all further information please visit our
-For all further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
+For further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
 
 For software documentation please click <a href="https://pschiee.github.io/Perfect-Colour/">here</a>. 
 
