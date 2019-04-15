@@ -1,5 +1,0 @@
-<map id="chosen_colour::set_colour" name="chosen_colour::set_colour">
-<area shape="rect" id="node1" title="Sets the colour and stores it." alt="" coords="197,23,329,65"/>
-<area shape="rect" id="node2" href="$class_main_window.html#abefada8d1ddbda4cf29f7b88c60c9181" title="Sets colour of displayed colour to received colour." alt="" coords="5,5,149,32"/>
-<area shape="rect" id="node3" href="$classpaint.html#a6f00a751b47f488a8298edc9b77a2e99" title="Receives colour from the mainwindow and sets the colour to paint to be this." alt="" coords="25,56,130,83"/>
-</map>

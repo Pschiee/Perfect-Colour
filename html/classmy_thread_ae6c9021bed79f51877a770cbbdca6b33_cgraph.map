@@ -1,6 +1,0 @@
-<map id="myThread::myThread" name="myThread::myThread">
-<area shape="rect" id="node1" title="THe thread initialisation." alt="" coords="5,56,149,83"/>
-<area shape="rect" id="node2" href="$class_d_c_motor.html#ad03f2b697e964c6b3aaa552876f964df" title="Initialises the DC motor." alt="" coords="197,5,296,32"/>
-<area shape="rect" id="node3" href="$classweight.html#a90dece3e4a0a6269f11d1e1a9bf5a348" title="The initialising function." alt="" coords="205,56,289,83"/>
-<area shape="rect" id="node4" href="$class_motor.html#ae6fb0b65c67ef842f5d5e0a7b99484c9" title="Initialises the motor." alt="" coords="207,107,287,133"/>
-</map>
