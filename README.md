@@ -66,7 +66,6 @@ Once you own a Perfect Colour Machine, follow 3 simple steps:
 2. Open our app
 3. Choose your colour and click "mix"
 
-For further information please visit the <a href="https://github.com/Pschiee/Perfect-Colour/wiki/User-Manual">User Manual</a>.
 
 ## Using the application
 
@@ -75,6 +74,8 @@ Very simple! Follow the following steps:
 2. Select a colour on the wheel or by uploading a picture and choosing it from it.
 3. Specify the quantity of paint you want
 4. Click mix and voila!
+
+For further information please visit the <a href="https://github.com/Pschiee/Perfect-Colour/wiki/User-Manual">User Manual</a>.
 
 ## Demonstration
 
