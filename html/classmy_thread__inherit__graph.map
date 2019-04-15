@@ -1,0 +1,4 @@
+<map id="myThread" name="myThread">
+<area shape="rect" id="node1" title="The thread which weighs the paint as it is being dispensed and controls the dc motor pushing." alt="" coords="8,80,87,107"/>
+<area shape="rect" id="node2" href="$class_cpp_thread.html" title="abstract thread which contains the inner workings of the thread model." alt="" coords="5,5,89,32"/>
+</map>
