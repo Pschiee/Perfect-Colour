@@ -79,7 +79,9 @@ For further information please visit the <a href="https://github.com/Pschiee/Per
 
 ## Demonstration
 
-<a href="https://www.youtube.com/watch?v=BCwkkFHPxvM" target="_blank"> Water Test
+<a href="https://www.youtube.com/watch?v=QNqFCe46agE" target="_blank"> Water Test
+
+<a href="https://www.youtube.com/watch?v=BCwkkFHPxvM" target="_blank"> Paint Test
 
 ## FAQs
 
