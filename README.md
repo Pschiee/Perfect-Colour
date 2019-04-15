@@ -107,7 +107,7 @@ The machine will produce the colour you see, so it will depend on the lighting c
 
 ## Further Information
 
-For further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
+For all further information please visit our <a href="https://github.com/Pschiee/Perfect-Colour/wiki">Wiki</a>. 
 
 For software documentation please click <a href="https://pschiee.github.io/Perfect-Colour/">here</a>. 
 
