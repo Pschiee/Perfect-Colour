@@ -16,9 +16,11 @@ chosen_colour::chosen_colour(void)
     QColor Colour;
 }
 
-void chosen_colour::set_colour(QColor(color)){
+void chosen_colour::set_colour(QColor(color))
+{
     colour = color;
 }
-QColor chosen_colour::get_colour(void) {
+QColor chosen_colour::get_colour(void) 
+{
     return colour;
 }

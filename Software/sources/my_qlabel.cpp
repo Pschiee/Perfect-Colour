@@ -16,19 +16,19 @@ my_qlabel::my_qlabel(QWidget *parent) :
 
 }
 
-void my_qlabel::mouseMoveEvent(QMouseEvent *ev)
+void my_qlabel::mouseMoveEvent(QMouseEvent *ev) // Track mouse's x and y position while moving
 {
-    this ->x = ev->x();
-    this -> y = ev->y();
-    emit Mouse_Pos();
+    this ->x = ev->x(); // x coordinate
+    this -> y = ev->y(); // y coordinate
+    emit Mouse_Pos(); // Sends a signal of mouse's x and y position while moving
 }
 
-void my_qlabel::mousePressEvent(QMouseEvent *ev)
+void my_qlabel::mousePressEvent(QMouseEvent *ev) // Monitor if mouse botton is pressed
 {
-    emit Mouse_Pressed();
+    emit Mouse_Pressed(); // Sends a signal of mouse's x and y position when mouse botton is pressed
 }
 
-void my_qlabel::leaveEvent(QEvent *)
+void my_qlabel::leaveEvent(QEvent *) // Monitor if mouse button is released
 {
-   emit Mouse_Left();
+   emit Mouse_Left(); // Sends a signal of mouse's x and y position when mouse botton is released
 }

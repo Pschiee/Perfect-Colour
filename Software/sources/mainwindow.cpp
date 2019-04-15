@@ -31,15 +31,15 @@ MainWindow::MainWindow(QWidget *parent) :
 {   
     ui->setupUi(this);
 
-    QMainWindow::showFullScreen();
-    QPixmap pic(":/img/img/Perfect_Colour_Logo_02.png");
-    int w=ui->label_logo->width();
-    int h=ui->label_logo->height();
-    ui->label_logo->setPixmap(pic.scaled(w,h,Qt::KeepAspectRatio));
-    ui->label_logo->setScaledContents(true);
-    QPalette p = ui ->colour_selected -> palette();
-    p.setColor(QPalette::Base, QColor(255,255,255));
-    ui -> colour_selected -> setPalette(p);
+    QMainWindow::showFullScreen(); // Set size of main window to full screen size
+    QPixmap pic(":/img/img/Perfect_Colour_Logo_02.png"); // Find logo in resources
+    int w=ui->label_logo->width(); // get width of the label used for displaying the logo
+    int h=ui->label_logo->height(); // get the height of the label used for displaying the logo
+    ui->label_logo->setPixmap(pic.scaled(w,h,Qt::KeepAspectRatio)); // Keep the aspect ratio of the logo when resizing
+    ui->label_logo->setScaledContents(true); // Display logo
+    QPalette p = ui ->colour_selected -> palette(); // Set area for the selected colour to be displayed
+    p.setColor(QPalette::Base, QColor(255,255,255)); // Set background to RGB (255,255,255)
+    ui -> colour_selected -> setPalette(p); // Shows the colour selected in display area
 }
 
 MainWindow::~MainWindow()
@@ -49,63 +49,65 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-	bool ok = 0;
-	amount = QInputDialog::getDouble(this, "Amount", "Amount Selected",0,0,10,2,&ok); 
-	if (ok == 1) {
-    QColor color = chosenColour.get_colour();
-	paint paint;
-    connect(this,SIGNAL(sent(QColor,double)), &paint, SLOT(received(QColor,double)));
-    emit sent(color,amount);
-    paint.setModal(true);
-    paint.exec(); }
+	bool ok = 0; // Refers to validity of amount selected
+	amount = QInputDialog::getDouble(this, "Amount", "Amount Selected",0,0,10,2,&ok); // Provides a dialog window for input amount from user
+
+	if (ok == 1) { // Is amount selected valid
+    QColor color = chosenColour.get_colour(); // Gets the colour selected
+	  paint paint; // Paint object
+    connect(this,SIGNAL(sent(QColor,double)), &paint, SLOT(received(QColor,double))); // Links to colour selected
+    emit sent(color,amount); // Sends colour and amount selected
+    paint.setModal(true); // Starts dispensing process
+    paint.exec(); // Executes code for dispensing
+  }
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    QColor color = QColorDialog::getColor(Qt::white,this, "Choose colour");
-    store(color);
-    if (color.isValid()){
-        QPalette p = ui ->colour_selected -> palette();
-        p.setColor(QPalette::Base, QColor(color));
-        ui -> colour_selected -> setPalette(p);
-        chosenColour.set_colour(color);
+    QColor color = QColorDialog::getColor(Qt::white,this, "Choose colour"); // Opens a Colour Dialogue for the user to select a colour
+    store(color); // Stores the colour selected
 
+    if (color.isValid()){ // Check validity of colour selected
+        QPalette p = ui ->colour_selected -> palette(); // Set area for the selected colour to be displayed
+        p.setColor(QPalette::Base, QColor(color)); // Sets the basecolour to be the colour selected
+        ui -> colour_selected -> setPalette(p); // Shows the colour selected in display area
+        chosenColour.set_colour(color); // Stores the selected colour
     }
-
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
-      selectcolour selectcolour;
-      connect(&selectcolour,SIGNAL(send(QColor)), this, SLOT(receive(QColor)));
-      selectcolour.setModal(true);
-      selectcolour.exec();
+      selectcolour selectcolour; // Loads selectcolour dialog
+      connect(&selectcolour,SIGNAL(send(QColor)), this, SLOT(receive(QColor))); // Connects the main window and the browse
+      selectcolour.setModal(true); // Open selectcolour
+      selectcolour.exec(); // Pop up as a modal dialog
 }
 
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    this->close();
+    this->close(); //Close app
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-    QPalette w;
-    ui->colour_selected->setPalette(w);
+    QPalette w; // Load colour
+    ui->colour_selected->setPalette(w); // Show colour on the screen
 }
 
-void MainWindow::receive(QColor color) {
-    chosenColour.set_colour(color);
-    QPalette p = ui ->colour_selected -> palette();
-    p.setColor(QPalette::Base, color);
-    ui -> colour_selected -> setPalette(p);
+void MainWindow::receive(QColor color)
+{
+    chosenColour.set_colour(color); // Sets selected colour to be the colour received
+    QPalette p = ui ->colour_selected -> palette();  // Set area for the selected colour to be displayed
+    p.setColor(QPalette::Base, color); // Sets the basecolour to be the colour selected
+    ui -> colour_selected -> setPalette(p); // Shows the colour selected in display area
 }
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    cleanpaint cleanpaint;
-    cleanpaint.setModal(true);
-    cleanpaint.exec();
+    cleanpaint cleanpaint; // Load cleanpaint dialog
+    cleanpaint.setModal(true); // Open cleanpaint window
+    cleanpaint.exec(); // Execute
 }
 
 
@@ -135,6 +137,7 @@ void MainWindow::on_actionApp_Help_triggered()
                                                                "<h3>Clean/Refill a Syringe</h3><p>Pressing this button will "
                                                                "open another window</p><h3>Close App</h3><p>Clicking on this "
                                                                "button will close our app.</p>" );
+    // Displays a help message for users
 }
 
 
@@ -150,4 +153,5 @@ void MainWindow::on_actionAbout_triggered()
                                                                                                          " information needed to build your own paint dispensing machine. Moreover, "
                                                                                                          "you will be able to meet our team, visit our Github page &nbsp;</p> <p><a "
                                                                         "href='https://github.com/Pschiee/Perfect-Colour'>Check out our project page here.</a>&nbsp;</p>");
+    // Displays an about message for users
 }
